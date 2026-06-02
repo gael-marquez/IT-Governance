@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Matriz de Riesgos · Omnis Academia · IT Governance</title>
+<meta name="description" content="Matriz de Riesgos — Portafolio del proyecto final de IT Governance de Omnis Academia. IPN · ESCOM · 7CV4." />
+<link rel="shortcut icon" href="./favicon/linux.png" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/config.js"></script>
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-slate-50 text-slate-700 antialiased selection:bg-guinda-200 selection:text-guinda-900" data-page="riesgos" data-title="Matriz de Riesgos">
+<main>
+<!-- ============ BREADCRUMB ============ -->
+<div class="bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+    <nav class="text-sm text-slate-400 flex items-center gap-2 flex-wrap">
+      <a href="index.html" class="inline-flex items-center gap-1.5 hover:text-guinda-700 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h12a1 1 0 001-1V10" /></svg>
+        Inicio
+      </a>
+      <span class="text-slate-300">/</span>
+      <span class="text-slate-600 font-medium">Matriz de Riesgos</span>
+    </nav>
+  </div>
+</div>
+<section id="riesgos" class="bg-slate-50 py-16 lg:py-24 border-t border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="reveal max-w-2xl">
+      <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">08 · Matriz de Riesgos · ISO/IEC 27000</span>
+      <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Gestión de riesgos de seguridad</h2>
+      <p class="mt-3 text-slate-600">Clasificación CID de los activos, valoración de riesgos e identificación de infraestructuras críticas.</p>
+    </div>
+
+    <!-- Matriz CID -->
+    <div class="reveal mt-10">
+      <h3 class="font-display font-bold text-lg text-slate-900">Matriz CID</h3>
+      <p class="mt-1 text-sm text-slate-500">Valoración de Confidencialidad, Integridad y Disponibilidad por activo (A = Alta · M = Media · B = Baja).</p>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[560px]">
+          <thead><tr><th>Activo de información</th><th class="text-center">Confidencialidad</th><th class="text-center">Integridad</th><th class="text-center">Disponibilidad</th></tr></thead>
+          <tbody>
+            <tr><td class="font-medium text-slate-700">Datos personales de usuarios</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Base de datos de progreso</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Transacciones y pagos</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Certificados digitales</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Videos y recursos (Blob)</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Plataforma web y streaming</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+            <tr><td class="font-medium text-slate-700">Catálogo de cursos</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Matriz de riesgos -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900">Valoración de riesgos y controles</h3>
+      <p class="mt-1 text-sm text-slate-500">Nivel de riesgo = Probabilidad × Impacto. Controles alineados a ISO/IEC 27002.</p>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[860px]">
+          <thead><tr><th>ID</th><th>Amenaza / Vulnerabilidad</th><th>Activo afectado</th><th class="text-center">Prob.</th><th class="text-center">Impacto</th><th class="text-center">Nivel</th><th>Control / Tratamiento</th></tr></thead>
+          <tbody>
+            <tr><td class="font-mono text-xs text-slate-400">R01</td><td class="font-medium text-slate-700">Caída o latencia del streaming</td><td>Reproductor · Blob · Nube</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Auto-scaling, CDN y redundancia multi-zona.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R02</td><td class="font-medium text-slate-700">Brecha de datos personales</td><td>BD · Datos de usuarios</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Cifrado en reposo/tránsito y control de acceso.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R03</td><td class="font-medium text-slate-700">Fraude o intercepción en pagos</td><td>Pasarela · Transacciones</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Tokenización, TLS y cumplimiento PCI-DSS.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R04</td><td class="font-medium text-slate-700">Acceso no autorizado (cuentas/admin)</td><td>API · Plataforma</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>MFA, RBAC y tokens de sesión.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R05</td><td class="font-medium text-slate-700">Falsificación de certificados</td><td>Certificados digitales</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Firma digital y validación criptográfica.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R06</td><td class="font-medium text-slate-700">Pérdida de datos por fallo de servidor</td><td>Base de datos</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Respaldos diarios (RPO ≤ 24 h) y restauración &lt; 4 h.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R07</td><td class="font-medium text-slate-700">Ataque de denegación (DDoS)</td><td>Plataforma · Nube</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>WAF y mitigación en &lt; 60 min.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R08</td><td class="font-medium text-slate-700">Indisponibilidad del proveedor de nube</td><td>Infraestructura Azure</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Alta disponibilidad y despliegue multi-zona.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R09</td><td class="font-medium text-slate-700">Código vulnerable o dependencias inseguras</td><td>Backend · Frontend</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Pruebas, cobertura ≥ 80% y análisis SAST.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-400">R10</td><td class="font-medium text-slate-700">Error humano / fuga interna</td><td>Personas · Datos</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Capacitación y principio de mínimo privilegio.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Heatmap + Infra crítica -->
+    <div class="reveal mt-12 grid lg:grid-cols-2 gap-6">
+      <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="font-display font-bold text-lg text-slate-900">Mapa de calor probabilidad × impacto</h3>
+        <div class="mt-4 grid grid-cols-[auto_repeat(3,1fr)] gap-1.5 text-xs text-center">
+          <div></div>
+          <div class="font-semibold text-slate-500 pb-1">Impacto Bajo</div>
+          <div class="font-semibold text-slate-500 pb-1">Medio</div>
+          <div class="font-semibold text-slate-500 pb-1">Alto</div>
+
+          <div class="font-semibold text-slate-500 self-center pr-1">Prob. Alta</div>
+          <div class="rounded-lg bg-amber-200 text-amber-800 py-4 font-semibold">Medio</div>
+          <div class="rounded-lg bg-red-300 text-red-800 py-4 font-semibold">Alto</div>
+          <div class="rounded-lg bg-red-500 text-white py-4 font-semibold">Crítico</div>
+
+          <div class="font-semibold text-slate-500 self-center pr-1">Media</div>
+          <div class="rounded-lg bg-emerald-200 text-emerald-800 py-4 font-semibold">Bajo</div>
+          <div class="rounded-lg bg-amber-300 text-amber-900 py-4 font-semibold">Medio<br><span class="font-normal opacity-70">R07·R09·R10</span></div>
+          <div class="rounded-lg bg-red-300 text-red-800 py-4 font-semibold">Alto<br><span class="font-normal opacity-70">R01·R02·R03·R04</span></div>
+
+          <div class="font-semibold text-slate-500 self-center pr-1">Baja</div>
+          <div class="rounded-lg bg-emerald-300 text-emerald-900 py-4 font-semibold">Bajo</div>
+          <div class="rounded-lg bg-emerald-200 text-emerald-800 py-4 font-semibold">Bajo</div>
+          <div class="rounded-lg bg-amber-300 text-amber-900 py-4 font-semibold">Medio<br><span class="font-normal opacity-70">R05·R06·R08</span></div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="font-display font-bold text-lg text-slate-900">Infraestructuras críticas</h3>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Base de datos relacional</span><span class="chip bg-red-600 text-white">Crítica</span></li>
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Backend · API REST</span><span class="chip bg-red-600 text-white">Crítica</span></li>
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Pasarela de pagos</span><span class="chip bg-red-600 text-white">Crítica</span></li>
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Azure Blob Storage (videos)</span><span class="chip bg-red-600 text-white">Crítica</span></li>
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-amber-50 ring-1 ring-amber-100 p-3"><span class="font-medium text-slate-700">Plataforma web (frontend)</span><span class="chip bg-amber-500 text-white">Alta</span></li>
+          <li class="flex items-center justify-between gap-3 rounded-lg bg-emerald-50 ring-1 ring-emerald-100 p-3"><span class="font-medium text-slate-700">Pipeline CI/CD</span><span class="chip bg-emerald-600 text-white">Media</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
