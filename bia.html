@@ -28,32 +28,23 @@
     </nav>
   </div>
 </div>
+
 <section id="bia" class="bg-white py-16 lg:py-24 border-t border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="reveal max-w-2xl">
-      <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">09 · Business Impact Analysis</span>
+    <div class="reveal max-w-3xl">
+      <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">09 · Business Impact Analysis · ISO 22301:2012</span>
       <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Análisis de impacto al negocio</h2>
-      <p class="mt-3 text-slate-600">Evaluación del impacto de la interrupción de los procesos críticos en el tiempo, con sus objetivos de recuperación (MTPD, RTO y RPO).</p>
-      <button data-pdf="pdf/analisis-de-impacto.pdf" data-pdf-title="Análisis de Impacto · BIA" class="group mt-5 inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
-        Ver documento original (PDF)
-        <span class="text-white/60 group-hover:translate-x-0.5 transition">→</span>
-      </button>
-    </div>
-
-    <!-- Glosario rápido -->
-    <div class="reveal mt-8 grid sm:grid-cols-3 gap-4">
-      <div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
-        <div class="font-mono text-xs font-bold text-guinda-700">MTPD</div>
-        <p class="mt-1 text-sm text-slate-600"><span class="font-medium text-slate-800">Máximo periodo tolerable de interrupción.</span> Tiempo tras el cual el daño es irreparable.</p>
-      </div>
-      <div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
-        <div class="font-mono text-xs font-bold text-guinda-700">RTO</div>
-        <p class="mt-1 text-sm text-slate-600"><span class="font-medium text-slate-800">Objetivo de tiempo de recuperación.</span> Plazo meta para restaurar el servicio.</p>
-      </div>
-      <div class="rounded-xl bg-slate-50 ring-1 ring-slate-200 p-4">
-        <div class="font-mono text-xs font-bold text-guinda-700">RPO</div>
-        <p class="mt-1 text-sm text-slate-600"><span class="font-medium text-slate-800">Objetivo de punto de recuperación.</span> Pérdida máxima de datos admisible.</p>
+      <p class="mt-3 text-slate-600">Análisis del proceso crítico <span class="font-medium text-slate-800">Gestión del Aprendizaje y Evaluación (P3)</span> de Omnis Academia. Integra dos documentos: la <span class="font-medium text-slate-800">identificación de recursos críticos y prioridades</span> y el <span class="font-medium text-slate-800">BIA</span> propiamente dicho (impacto en el tiempo, objetivos de recuperación, actividades de soporte y dependencias).</p>
+      <div class="mt-5 flex flex-wrap gap-3">
+        <button data-pdf="pdf/Analisis_de_Impacto_BIA.pdf" data-pdf-title="Análisis de Impacto al Negocio (BIA)" class="group inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
+          Ver BIA (PDF)
+          <span class="text-white/60 group-hover:translate-x-0.5 transition">→</span>
+        </button>
+        <button data-pdf="pdf/analisis-de-impacto.pdf" data-pdf-title="Análisis de Impacto · Recursos críticos" class="group inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-white px-5 py-3 text-sm font-semibold text-guinda-700 ring-1 ring-guinda-200 shadow-sm hover:bg-guinda-50 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
+          Ver recursos críticos (PDF)
+        </button>
       </div>
     </div>
 
@@ -63,111 +54,389 @@
         <h3 class="font-display font-bold text-lg text-slate-900">BIA Táctico</h3>
         <span class="chip bg-brand-50 text-brand-700 ring-1 ring-brand-100">3 procesos</span>
       </div>
-      <p class="mt-1 text-sm text-slate-500">Impacto a nivel de proceso de negocio y objetivos de recuperación asociados.</p>
-
+      <p class="mt-1 text-sm text-slate-500">Visión a nivel de proceso de negocio y sus objetivos de recuperación. El proceso núcleo (P3) se detalla a continuación con las cifras del BIA operacional.</p>
       <div class="mt-5 grid lg:grid-cols-3 gap-6">
         <!-- P1 -->
         <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm flex flex-col">
           <div class="flex items-start justify-between gap-3">
-            <div>
-              <div class="font-mono text-xs text-slate-400">P1</div>
-              <h4 class="font-display font-bold text-slate-900">Gestión de Usuarios y Catálogo</h4>
-            </div>
+            <div><div class="font-mono text-xs text-slate-400">P1</div><h4 class="font-display font-bold text-slate-900">Gestión de Usuarios y Catálogo</h4></div>
             <span class="chip bg-amber-100 text-amber-700 shrink-0">Alta</span>
           </div>
-          <p class="mt-3 text-sm text-slate-600">Registro, autenticación y administración del catálogo de cursos. Su caída impide nuevas altas y el descubrimiento de contenido.</p>
-          <div class="mt-4 space-y-2">
-            <div class="flex items-center justify-between rounded-lg bg-emerald-50 ring-1 ring-emerald-100 px-3 py-2 text-sm"><span class="text-slate-600">0–4 h</span><span class="font-medium text-emerald-700">Tolerable</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-amber-50 ring-1 ring-amber-100 px-3 py-2 text-sm"><span class="text-slate-600">4–24 h</span><span class="font-medium text-amber-700">Moderado</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-red-50 ring-1 ring-red-100 px-3 py-2 text-sm"><span class="text-slate-600">&gt; 24 h</span><span class="font-medium text-red-700">Severo</span></div>
-          </div>
-          <div class="mt-4 grid grid-cols-3 gap-2 text-center border-t border-slate-100 pt-4">
-            <div><div class="text-xs text-slate-400">MTPD</div><div class="font-display font-bold text-slate-900">24 h</div></div>
+          <p class="mt-3 text-sm text-slate-600">Registro, autenticación y administración del catálogo. Su caída impide nuevas altas y el descubrimiento de contenido.</p>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-center border-t border-slate-100 pt-4">
+            <div><div class="text-xs text-slate-400">MTPoD</div><div class="font-display font-bold text-slate-900">24 h</div></div>
             <div><div class="text-xs text-slate-400">RTO</div><div class="font-display font-bold text-slate-900">8 h</div></div>
-            <div><div class="text-xs text-slate-400">RPO</div><div class="font-display font-bold text-slate-900">12 h</div></div>
           </div>
         </div>
-
         <!-- P2 -->
-        <div class="rounded-2xl ring-2 ring-guinda-200 bg-white p-6 shadow-md flex flex-col">
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm flex flex-col">
           <div class="flex items-start justify-between gap-3">
-            <div>
-              <div class="font-mono text-xs text-slate-400">P2</div>
-              <h4 class="font-display font-bold text-slate-900">Gestión de Ventas</h4>
-            </div>
+            <div><div class="font-mono text-xs text-slate-400">P2</div><h4 class="font-display font-bold text-slate-900">Gestión de Ventas</h4></div>
             <span class="chip bg-red-100 text-red-700 shrink-0">Crítica</span>
           </div>
-          <p class="mt-3 text-sm text-slate-600">Compra de cursos y procesamiento de pagos. Cada minuto de caída es ingreso perdido y afecta directamente la confianza del cliente.</p>
-          <div class="mt-4 space-y-2">
-            <div class="flex items-center justify-between rounded-lg bg-amber-50 ring-1 ring-amber-100 px-3 py-2 text-sm"><span class="text-slate-600">0–4 h</span><span class="font-medium text-amber-700">Moderado</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-red-50 ring-1 ring-red-100 px-3 py-2 text-sm"><span class="text-slate-600">4–24 h</span><span class="font-medium text-red-700">Severo</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-red-100 ring-1 ring-red-200 px-3 py-2 text-sm"><span class="text-slate-700">&gt; 24 h</span><span class="font-semibold text-red-800">Crítico</span></div>
-          </div>
-          <div class="mt-4 grid grid-cols-3 gap-2 text-center border-t border-slate-100 pt-4">
-            <div><div class="text-xs text-slate-400">MTPD</div><div class="font-display font-bold text-slate-900">8 h</div></div>
-            <div><div class="text-xs text-slate-400">RTO</div><div class="font-display font-bold text-guinda-700">4 h</div></div>
-            <div><div class="text-xs text-slate-400">RPO</div><div class="font-display font-bold text-guinda-700">1 h</div></div>
+          <p class="mt-3 text-sm text-slate-600">Compra de cursos y procesamiento de pagos. Cada minuto de caída es ingreso perdido y afecta la confianza del cliente.</p>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-center border-t border-slate-100 pt-4">
+            <div><div class="text-xs text-slate-400">MTPoD</div><div class="font-display font-bold text-slate-900">8 h</div></div>
+            <div><div class="text-xs text-slate-400">RTO</div><div class="font-display font-bold text-slate-900">4 h</div></div>
           </div>
         </div>
-
         <!-- P3 -->
         <div class="rounded-2xl ring-2 ring-guinda-200 bg-white p-6 shadow-md flex flex-col">
           <div class="flex items-start justify-between gap-3">
-            <div>
-              <div class="font-mono text-xs text-slate-400">P3 · núcleo</div>
-              <h4 class="font-display font-bold text-slate-900">Aprendizaje y Evaluación</h4>
-            </div>
+            <div><div class="font-mono text-xs text-slate-400">P3 · núcleo</div><h4 class="font-display font-bold text-slate-900">Aprendizaje y Evaluación</h4></div>
             <span class="chip bg-red-100 text-red-700 shrink-0">Crítica</span>
           </div>
-          <p class="mt-3 text-sm text-slate-600">Reproducción de contenido, evaluaciones y emisión de certificados. Es la razón de ser del servicio y el de mayor impacto reputacional.</p>
-          <div class="mt-4 space-y-2">
-            <div class="flex items-center justify-between rounded-lg bg-amber-50 ring-1 ring-amber-100 px-3 py-2 text-sm"><span class="text-slate-600">0–4 h</span><span class="font-medium text-amber-700">Moderado</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-red-50 ring-1 ring-red-100 px-3 py-2 text-sm"><span class="text-slate-600">4–24 h</span><span class="font-medium text-red-700">Severo</span></div>
-            <div class="flex items-center justify-between rounded-lg bg-red-100 ring-1 ring-red-200 px-3 py-2 text-sm"><span class="text-slate-700">&gt; 24 h</span><span class="font-semibold text-red-800">Crítico</span></div>
-          </div>
-          <div class="mt-4 grid grid-cols-3 gap-2 text-center border-t border-slate-100 pt-4">
-            <div><div class="text-xs text-slate-400">MTPD</div><div class="font-display font-bold text-slate-900">12 h</div></div>
-            <div><div class="text-xs text-slate-400">RTO</div><div class="font-display font-bold text-guinda-700">4 h</div></div>
-            <div><div class="text-xs text-slate-400">RPO</div><div class="font-display font-bold text-guinda-700">24 h</div></div>
+          <p class="mt-3 text-sm text-slate-600">Streaming, evaluaciones y emisión de certificados. Es la razón de ser del servicio y el de mayor impacto reputacional.</p>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-center border-t border-slate-100 pt-4">
+            <div><div class="text-xs text-slate-400">MTPoD</div><div class="font-display font-bold text-guinda-700">&lt; 12 h</div></div>
+            <div><div class="text-xs text-slate-400">RTO</div><div class="font-display font-bold text-guinda-700">&lt; 5 h</div></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- BIA Operacional (1, detallado P3) -->
+    <!-- BIA Operacional · separador -->
+    <div class="reveal mt-14 flex items-center gap-3">
+      <h3 class="font-display font-extrabold text-xl text-slate-900">BIA Operacional</h3>
+      <span class="chip bg-guinda-100 text-guinda-700">Proceso núcleo · P3</span>
+    </div>
+    <p class="reveal mt-1 text-sm text-slate-500">Desglose detallado del proceso de Aprendizaje y Evaluación, conforme a los documentos originales.</p>
+
+    <!-- 1 · Identificación del proceso -->
+    <div class="reveal mt-8">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">1</span>Identificación del proceso</h3>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-slate-50/60 p-5">
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Proceso</div>
+          <div class="mt-1 font-display font-bold text-slate-900">Gestión del Aprendizaje y Evaluación</div>
+          <span class="mt-2 inline-block chip bg-guinda-100 text-guinda-700">Proceso núcleo · P3</span>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-slate-50/60 p-5">
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Grupo de productos y servicios</div>
+          <div class="mt-1 font-medium text-slate-700">Omnis Academia · Cursos</div>
+          <div class="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-400">Área / Función responsable</div>
+          <div class="mt-1 font-medium text-slate-700">Cómputo</div>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-slate-50/60 p-5">
+          <div class="text-xs font-semibold uppercase tracking-wide text-slate-400">Responsable</div>
+          <div class="mt-1 font-medium text-slate-700">Héctor Alejandro Hernández Aranda</div>
+          <div class="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-400">Fecha de llenado</div>
+          <div class="mt-1 font-medium text-slate-700">27 de abril de 2026</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 · Recursos críticos y prioridades -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">2</span>Recursos críticos y prioridades</h3>
+      <p class="mt-1 text-sm text-slate-500">Recursos y dependencias de soporte del servicio (requisito ISO 22301:2012, 8.2.2.d). Prioridad <span class="font-semibold text-red-600">1</span> = mayor · <span class="font-semibold text-slate-500">3</span> = menor.</p>
+
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
+        <span class="chip bg-red-100 text-red-700 ring-1 ring-red-200">P1 · Mayor prioridad</span>
+        <span class="chip bg-amber-100 text-amber-700 ring-1 ring-amber-200">P2</span>
+        <span class="chip bg-slate-100 text-slate-500 ring-1 ring-slate-200">P3 · Menor prioridad</span>
+      </div>
+
+      <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 [&_li]:flex [&_li]:items-start [&_li]:justify-between [&_li]:gap-3 [&_li]:py-2 [&_li]:border-t [&_li]:border-slate-100 [&_li:first-child]:border-t-0">
+        <!-- Personal -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Personal / Gente</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Desarrollador Backend</span> — API REST, BD, evaluaciones y certificados.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Project Manager / QA</span> — coordina la respuesta a incidentes y verifica la integridad.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Desarrollador Frontend</span> — restaura la plataforma web y la comunicación.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- Información y datos -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Información y datos</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Datos personales</span> de usuarios — BD relacional.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Transacciones y propiedad de bundles</span> — BD / pasarela.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Progreso académico</span> y registros de evaluación — BD relacional.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- TIC -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Sistemas TIC</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Backend · API REST</span> (Azure Container Apps).</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Base de datos relacional</span> (perfiles y progreso).</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Azure Blob Storage</span> (videos y recursos).</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Plataforma web</span> y de pagos.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- Edificios -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Edificios y ambiente</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Centro de datos Azure</span> (regiones primaria y secundaria).</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Sede / oficina</span> del equipo — sustituible por trabajo remoto.</span><span class="chip bg-slate-100 text-slate-500 shrink-0">P3</span></li>
+          </ul>
+        </div>
+        <!-- Instalaciones / equipamiento -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Instalaciones y equipamiento</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Servicios en la nube</span> (Azure) e internet de alta disponibilidad.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Equipos de cómputo</span> del equipo de desarrollo y soporte.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- Finanzas -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Finanzas</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Ingresos</span> por venta de cursos y bundles.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Presupuesto de nube</span> (Azure): cómputo, almacenamiento y ancho de banda.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Comisiones</span> de la pasarela de pagos.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- Proveedores -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Proveedores y socios</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Microsoft Azure</span> — infraestructura en la nube.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Stripe / PayPal</span> — pasarela de pagos.</span><span class="chip bg-red-100 text-red-700 shrink-0">P1</span></li>
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">Instructores</span> — aportan y actualizan el contenido.</span><span class="chip bg-amber-100 text-amber-700 shrink-0">P2</span></li>
+          </ul>
+        </div>
+        <!-- Transporte + RPO -->
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <h4 class="font-display font-bold text-slate-900 text-sm uppercase tracking-wide">Transportación</h4>
+          <ul class="mt-2 text-sm">
+            <li><span class="text-slate-600"><span class="font-medium text-slate-800">No aplica</span> — el servicio es 100% digital.</span><span class="chip bg-slate-100 text-slate-500 shrink-0">P3</span></li>
+          </ul>
+          <div class="mt-4 rounded-xl bg-slate-50 ring-1 ring-slate-200 p-3 text-xs text-slate-500">
+            <span class="font-semibold text-slate-700">RPO:</span> no se cuenta con aplicaciones que requieran un respaldo cuya pérdida pudiera impactar el servicio.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 · Matriz de impacto en el tiempo -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">3</span>Tipo y nivel de impacto a través del tiempo</h3>
+      <p class="mt-1 text-sm text-slate-500">Valoración del impacto de la interrupción según la franja de tiempo transcurrida (requisito ISO 22301:2012, 8.2.2.b).</p>
+
+      <!-- Leyenda -->
+      <div class="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
+        <span class="chip text-slate-400 ring-1 ring-slate-200">N · No aplica</span>
+        <span class="chip bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200">B · Bajo</span>
+        <span class="chip bg-amber-100 text-amber-700 ring-1 ring-amber-200">M · Medio</span>
+        <span class="chip bg-red-100 text-red-700 ring-1 ring-red-200">A · Alto</span>
+      </div>
+
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="w-full text-xs min-w-[860px] border-collapse [&_th]:px-2 [&_th]:py-2.5 [&_th]:font-semibold">
+          <thead>
+            <tr class="bg-slate-50 text-slate-500">
+              <th class="text-left sticky left-0 bg-slate-50">Tipo de impacto</th>
+              <th>0–5 m</th><th>5–15 m</th><th>15–30 m</th><th>30–60 m</th><th>1–2 h</th><th>2–5 h</th><th>5–12 h</th><th>12–24 h</th><th>1–2 d</th><th>2–5 d</th><th>&gt;5 d</th>
+            </tr>
+          </thead>
+          <tbody class="[&>tr>td]:px-2 [&>tr>td]:py-2 [&>tr>td]:text-center [&>tr>td]:border-t [&>tr>td]:border-slate-100 [&>tr>td]:font-semibold">
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Pérdida económica</td>
+              <td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Incumplimiento legal / regulatorio</td>
+              <td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Daño a la reputación / imagen</td>
+              <td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Afectación del servicio al cliente</td>
+              <td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Pérdida de calidad</td>
+              <td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Pérdida de productividad</td>
+              <td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Pérdida de control</td>
+              <td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-emerald-50 text-emerald-700">B</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-amber-100 text-amber-700">M</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td><td class="bg-red-100 text-red-700">A</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Daño a la salud / bienestar de personas</td>
+              <td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="bg-emerald-50 text-emerald-700">B</td>
+            </tr>
+            <tr>
+              <td class="!text-left !font-medium text-slate-700 whitespace-nowrap sticky left-0 bg-white">Daño medioambiental</td>
+              <td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td><td class="text-slate-300">N</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 4 · MTPoD y RTO -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">4</span>Objetivos de recuperación</h3>
+      <div class="mt-4 grid sm:grid-cols-2 gap-5">
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-gradient-to-br from-guinda-700 to-guinda-900 text-white p-6 shadow-sm">
+          <div class="flex items-center justify-between gap-3">
+            <span class="font-mono text-xs font-bold text-amber-300">MTPoD / MAO</span>
+            <span class="chip bg-white/15 text-white">Máximo tolerable</span>
+          </div>
+          <div class="mt-3 font-display text-4xl font-extrabold">&lt; 12 horas</div>
+          <p class="mt-2 text-sm text-white/70">Máximo periodo de interrupción tolerable: tiempo tras el cual los impactos adversos se vuelven inaceptables.</p>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center justify-between gap-3">
+            <span class="font-mono text-xs font-bold text-guinda-700">RTO</span>
+            <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">Meta de recuperación</span>
+          </div>
+          <div class="mt-3 font-display text-4xl font-extrabold text-slate-900">&lt; 5 horas</div>
+          <p class="mt-2 text-sm text-slate-500">Tiempo de recuperación objetivo: plazo en el que debe reanudarse el servicio tras un incidente.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 · Actividades de soporte -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">5</span>Actividades que soportan la operación</h3>
+      <p class="mt-1 text-sm text-slate-500">Secuencia de actividades sobre las que se sostiene el proceso de Aprendizaje y Evaluación.</p>
+      <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3"><span class="grid place-items-center h-8 w-8 rounded-lg bg-brand-50 text-brand-700 font-display font-bold">1</span><h4 class="font-display font-semibold text-slate-900">Solicitud de streaming</h4></div>
+          <p class="mt-2 text-sm text-slate-600">El usuario inicia la reproducción del material en video interactivo del curso adquirido.</p>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3"><span class="grid place-items-center h-8 w-8 rounded-lg bg-brand-50 text-brand-700 font-display font-bold">2</span><h4 class="font-display font-semibold text-slate-900">Despliegue de contenido</h4></div>
+          <p class="mt-2 text-sm text-slate-600">Los servidores en la nube gestionan el streaming en HD, evitando la latencia o la sobrecapacidad del servidor.</p>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3"><span class="grid place-items-center h-8 w-8 rounded-lg bg-brand-50 text-brand-700 font-display font-bold">3</span><h4 class="font-display font-semibold text-slate-900">Consulta de recursos</h4></div>
+          <p class="mt-2 text-sm text-slate-600">El usuario descarga o visualiza recursos complementarios como PDFs o código fuente.</p>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3"><span class="grid place-items-center h-8 w-8 rounded-lg bg-brand-50 text-brand-700 font-display font-bold">4</span><h4 class="font-display font-semibold text-slate-900">Resolución de quiz</h4></div>
+          <p class="mt-2 text-sm text-slate-600">El alumno realiza la evaluación; el sistema valida las respuestas y actualiza la base de datos relacional del progreso.</p>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-5 shadow-sm">
+          <div class="flex items-center gap-3"><span class="grid place-items-center h-8 w-8 rounded-lg bg-brand-50 text-brand-700 font-display font-bold">5</span><h4 class="font-display font-semibold text-slate-900">Certificación digital</h4></div>
+          <p class="mt-2 text-sm text-slate-600">Al alcanzar el 100% de la ruta de aprendizaje, se emite automáticamente el certificado digital.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 · Opciones de continuidad operacional -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">6</span>Opciones actuales de continuidad operacional</h3>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[680px]">
+          <thead><tr><th class="w-10 text-center">ID</th><th>Actividad</th><th>Estrategia / mecanismo de continuidad actual</th></tr></thead>
+          <tbody>
+            <tr><td class="text-center font-mono text-xs text-slate-400">1</td><td class="font-medium text-slate-700">Reproducción de video (streaming)</td><td>Conmutación a la región secundaria de Azure y reintento automático de la sesión del usuario.</td></tr>
+            <tr><td class="text-center font-mono text-xs text-slate-400">2</td><td class="font-medium text-slate-700">Consulta de recursos descargables</td><td>Réplica geo-redundante de Azure Blob Storage; los PDFs y el código se sirven desde el respaldo en la zona secundaria.</td></tr>
+            <tr><td class="text-center font-mono text-xs text-slate-400">3</td><td class="font-medium text-slate-700">Resolución de quiz y registro de progreso</td><td>Guardado temporal del avance en el cliente y cola de reintentos; la sincronización con la base de datos se completa al restablecerse el servicio.</td></tr>
+            <tr><td class="text-center font-mono text-xs text-slate-400">4</td><td class="font-medium text-slate-700">Generación de certificados digitales</td><td>Emisión diferida por lotes una vez recuperada la base de datos; emisión manual por el equipo en casos críticos.</td></tr>
+            <tr><td class="text-center font-mono text-xs text-slate-400">5</td><td class="font-medium text-slate-700">Atención y comunicación a usuarios</td><td>Trabajo desde casa del equipo, página de estado (status page) y notificaciones; procesos manuales de soporte.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 7 · Interdependencias -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900 flex items-center gap-2"><span class="grid place-items-center h-6 w-6 rounded-md bg-guinda-700 text-white text-xs font-bold">7</span>Interdependencia con otros procesos</h3>
+      <div class="mt-4 grid md:grid-cols-2 gap-5">
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span class="grid place-items-center h-8 w-8 rounded-lg bg-emerald-50 text-emerald-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12"/></svg></span>
+            <h4 class="font-display font-bold text-slate-900">Recibe información de</h4>
+          </div>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="flex gap-3"><span class="font-mono text-xs font-bold text-emerald-600 mt-0.5">01</span><div><span class="font-semibold text-slate-800">Gestión de Usuarios y Catálogo:</span> autenticación, perfil del estudiante y catálogo de cursos.</div></li>
+            <li class="flex gap-3"><span class="font-mono text-xs font-bold text-emerald-600 mt-0.5">02</span><div><span class="font-semibold text-slate-800">Gestión de Ventas / Bundles:</span> registro de propiedad y acceso al curso o paquete adquirido.</div></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
+          <div class="flex items-center gap-2">
+            <span class="grid place-items-center h-8 w-8 rounded-lg bg-guinda-50 text-guinda-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg></span>
+            <h4 class="font-display font-bold text-slate-900">Envía información a</h4>
+          </div>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="flex gap-3"><span class="font-mono text-xs font-bold text-guinda-600 mt-0.5">01</span><div><span class="font-semibold text-slate-800">Base de datos relacional:</span> actualización del progreso académico y del punto de reproducción del alumno.</div></li>
+            <li class="flex gap-3"><span class="font-mono text-xs font-bold text-guinda-600 mt-0.5">02</span><div><span class="font-semibold text-slate-800">Emisión de certificados y notificaciones:</span> entrega del certificado digital al completar la ruta de aprendizaje.</div></li>
+            <li class="flex gap-3"><span class="font-mono text-xs font-bold text-guinda-600 mt-0.5">03</span><div><span class="font-semibold text-slate-800">Dashboards de instructores y analítica:</span> métricas de avance y rendimiento de los alumnos.</div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ DOCUMENTOS ORIGINALES · VISORES INCRUSTADOS ============ -->
     <div class="reveal mt-14">
       <div class="flex items-center gap-3">
-        <h3 class="font-display font-bold text-lg text-slate-900">BIA Operacional</h3>
-        <span class="chip bg-brand-50 text-brand-700 ring-1 ring-brand-100">Proceso núcleo · P3</span>
+        <h3 class="font-display font-bold text-lg text-slate-900">Documentos originales</h3>
+        <span class="chip bg-brand-50 text-brand-700 ring-1 ring-brand-100">2 · PDF</span>
       </div>
-      <p class="mt-1 text-sm text-slate-500">Desglose por actividad del proceso <span class="font-medium text-slate-700">Aprendizaje y Evaluación</span> con sus recursos mínimos de recuperación.</p>
+      <p class="mt-1 text-sm text-slate-500">Los dos documentos que componen el análisis de impacto, incrustados para su consulta directa.</p>
 
-      <div class="mt-5 grid lg:grid-cols-3 gap-6">
-        <!-- Tabla de actividades -->
-        <div class="lg:col-span-2 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
-          <table class="tbl min-w-[640px]">
-            <thead><tr><th>Actividad operativa</th><th class="text-center">RTO</th><th class="text-center">RPO</th><th class="text-center">Prioridad</th></tr></thead>
-            <tbody>
-              <tr><td class="font-medium text-slate-700">Reproducción de video (streaming)</td><td class="text-center">4 h</td><td class="text-center">24 h</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Crítica</span></td></tr>
-              <tr><td class="font-medium text-slate-700">Registro de progreso del alumno</td><td class="text-center">6 h</td><td class="text-center">1 h</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Crítica</span></td></tr>
-              <tr><td class="font-medium text-slate-700">Aplicación de evaluaciones</td><td class="text-center">8 h</td><td class="text-center">1 h</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Alta</span></td></tr>
-              <tr><td class="font-medium text-slate-700">Cálculo de calificaciones</td><td class="text-center">12 h</td><td class="text-center">1 h</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Alta</span></td></tr>
-              <tr><td class="font-medium text-slate-700">Emisión de certificados</td><td class="text-center">24 h</td><td class="text-center">24 h</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Media</span></td></tr>
-            </tbody>
-          </table>
+      <!-- Documento 1: BIA -->
+      <div class="mt-5 overflow-hidden rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between gap-3 border-b border-slate-200 bg-slate-50 px-4 sm:px-5 py-3">
+          <div class="min-w-0 flex items-center gap-3">
+            <span class="grid place-items-center h-9 w-9 shrink-0 rounded-lg bg-guinda-100 text-guinda-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="font-display font-bold text-slate-900 truncate">Análisis de Impacto al Negocio (BIA)</p>
+              <p class="text-xs text-slate-500">Impacto en el tiempo, MTPoD/RTO, actividades y dependencias</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <a href="pdf/Analisis_de_Impacto_BIA.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5h5v5M19 5l-7 7M12 5H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-5"/></svg>
+              <span class="hidden sm:inline">Nueva pestaña</span>
+            </a>
+            <a href="pdf/Analisis_de_Impacto_BIA.pdf" download class="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              <span class="hidden sm:inline">Descargar</span>
+            </a>
+          </div>
         </div>
+        <iframe title="Análisis de Impacto al Negocio (BIA) (PDF)" src="pdf/Analisis_de_Impacto_BIA.pdf#view=FitH" class="w-full bg-slate-100 h-[72vh] min-h-[480px]" loading="lazy"></iframe>
+        <div class="border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-500">
+          ¿No se muestra el documento en tu dispositivo?
+          <a href="pdf/Analisis_de_Impacto_BIA.pdf" target="_blank" rel="noopener" class="font-medium text-guinda-700 hover:text-guinda-800 underline underline-offset-2">Ábrelo en una pestaña nueva</a>.
+        </div>
+      </div>
 
-        <!-- Recursos mínimos -->
-        <div class="rounded-2xl ring-1 ring-slate-200 bg-gradient-to-br from-guinda-700 to-guinda-900 text-white p-6 shadow-sm">
-          <h4 class="font-display font-bold">Recursos mínimos de recuperación</h4>
-          <p class="mt-1 text-sm text-white/70">Lo indispensable para restaurar el proceso núcleo.</p>
-          <ul class="mt-4 space-y-3 text-sm">
-            <li class="flex gap-3"><span class="text-amber-300">▸</span><div><span class="font-medium">Personas:</span> 1 DevOps + 1 Backend de guardia.</div></li>
-            <li class="flex gap-3"><span class="text-amber-300">▸</span><div><span class="font-medium">Infraestructura:</span> Container Apps y BD en zona secundaria de Azure.</div></li>
-            <li class="flex gap-3"><span class="text-amber-300">▸</span><div><span class="font-medium">Datos:</span> Último respaldo válido de progreso (≤ 1 h) y catálogo de videos en Blob.</div></li>
-            <li class="flex gap-3"><span class="text-amber-300">▸</span><div><span class="font-medium">Red / CDN:</span> Distribución de contenido con redundancia multi-zona.</div></li>
-            <li class="flex gap-3"><span class="text-amber-300">▸</span><div><span class="font-medium">Accesos:</span> Credenciales de emergencia y runbook de restauración.</div></li>
-          </ul>
+      <!-- Documento 2: Recursos críticos -->
+      <div class="mt-6 overflow-hidden rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <div class="flex items-center justify-between gap-3 border-b border-slate-200 bg-slate-50 px-4 sm:px-5 py-3">
+          <div class="min-w-0 flex items-center gap-3">
+            <span class="grid place-items-center h-9 w-9 shrink-0 rounded-lg bg-guinda-100 text-guinda-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
+            </span>
+            <div class="min-w-0">
+              <p class="font-display font-bold text-slate-900 truncate">Análisis de Impacto · Recursos críticos</p>
+              <p class="text-xs text-slate-500">Identificación de recursos y prioridades (ISO 22301:2012, 8.2.2.d)</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <a href="pdf/analisis-de-impacto.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5h5v5M19 5l-7 7M12 5H7a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-5"/></svg>
+              <span class="hidden sm:inline">Nueva pestaña</span>
+            </a>
+            <a href="pdf/analisis-de-impacto.pdf" download class="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-200 transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+              <span class="hidden sm:inline">Descargar</span>
+            </a>
+          </div>
+        </div>
+        <iframe title="Análisis de Impacto · Recursos críticos (PDF)" src="pdf/analisis-de-impacto.pdf#view=FitH" class="w-full bg-slate-100 h-[72vh] min-h-[480px]" loading="lazy"></iframe>
+        <div class="border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-500">
+          ¿No se muestra el documento en tu dispositivo?
+          <a href="pdf/analisis-de-impacto.pdf" target="_blank" rel="noopener" class="font-medium text-guinda-700 hover:text-guinda-800 underline underline-offset-2">Ábrelo en una pestaña nueva</a>.
         </div>
       </div>
     </div>
