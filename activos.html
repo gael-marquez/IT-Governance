@@ -34,40 +34,64 @@
       <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">07 · Inventario de Activos</span>
       <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Activos de los tres procesos</h2>
       <p class="mt-3 text-slate-600">Inventario integrado de información, software, infraestructura, servicios y personas que soportan el servicio.</p>
+      <button data-pdf="pdf/Inventario_activos.pdf" data-pdf-title="Inventario de Activos · Omnis Academia" class="group mt-5 inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
+        Ver documento original (PDF)
+        <span class="text-white/60 group-hover:translate-x-0.5 transition">→</span>
+      </button>
     </div>
 
     <div class="reveal mt-8 flex flex-wrap gap-2 text-xs font-semibold">
-      <span class="chip bg-sky-100 text-sky-700">Información</span>
-      <span class="chip bg-brand-100 text-brand-700">Software</span>
-      <span class="chip bg-slate-200 text-slate-700">Infraestructura</span>
-      <span class="chip bg-amber-100 text-amber-700">Servicio</span>
-      <span class="chip bg-emerald-100 text-emerald-700">Personas</span>
-    </div>
+  <span class="chip bg-sky-100 text-sky-700">Información</span>
+  <span class="chip bg-brand-100 text-brand-700">Software</span>
+  <span class="chip bg-slate-200 text-slate-700">Infraestructura</span>
+  <span class="chip bg-amber-100 text-amber-700">Servicio</span>
+  <span class="chip bg-emerald-100 text-emerald-700">Personas</span>
+</div>
 
-    <div class="reveal mt-5 overflow-x-auto rounded-2xl ring-1 ring-slate-200 shadow-sm">
-      <table class="tbl min-w-[820px]">
-        <thead><tr><th>ID</th><th>Activo</th><th>Tipo</th><th>Proceso</th><th>Responsable</th><th class="text-center">Criticidad</th></tr></thead>
-        <tbody>
-          <tr><td class="font-mono text-xs text-slate-400">A01</td><td class="font-medium text-slate-700">Plataforma web (Azure Static Web Apps)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P1 · P3</td><td>Dev Frontend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A02</td><td class="font-medium text-slate-700">Backend · API REST (Azure Container Apps)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P1 · P2 · P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A03</td><td class="font-medium text-slate-700">Base de datos relacional (perfiles y progreso)</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1 · P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A04</td><td class="font-medium text-slate-700">Azure Blob Storage (videos y recursos)</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A05</td><td class="font-medium text-slate-700">Datos personales de usuarios</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1</td><td>PM · QA</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A06</td><td class="font-medium text-slate-700">Catálogo de cursos segmentado</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1</td><td>Project Manager</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A07</td><td class="font-medium text-slate-700">Pasarela de pagos (Stripe / PayPal)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>P2</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A08</td><td class="font-medium text-slate-700">Registros de transacciones y propiedad de bundles</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P2</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A09</td><td class="font-medium text-slate-700">Certificados digitales</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P3</td><td>QA / Analista</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A10</td><td class="font-medium text-slate-700">Reproductor de video interactivo / streaming</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P3</td><td>Dev Frontend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A11</td><td class="font-medium text-slate-700">Infraestructura en la nube (Microsoft Azure)</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A12</td><td class="font-medium text-slate-700">Pipeline CI/CD (Azure Pipelines · Container Registry)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A13</td><td class="font-medium text-slate-700">Certificado SSL / HTTPS</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A14</td><td class="font-medium text-slate-700">Repositorio de código (GitHub)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Project Manager</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A15</td><td class="font-medium text-slate-700">Laptops de desarrollo</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>Apoyo</td><td>Equipo</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td></tr>
-          <tr><td class="font-mono text-xs text-slate-400">A16</td><td class="font-medium text-slate-700">Equipo de trabajo (PM · Dev · QA)</td><td><span class="chip bg-emerald-100 text-emerald-700">Personas</span></td><td>Todos</td><td>Project Manager</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="mt-3 text-xs text-slate-400">16 activos integrados de los procesos de Usuarios y Catálogo (P1), Ventas (P2) y Aprendizaje y Evaluación (P3), más activos de apoyo.</p>
+<div class="reveal mt-5 overflow-x-auto rounded-2xl ring-1 ring-slate-200 shadow-sm">
+  <table class="tbl min-w-[820px]">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Activo</th>
+        <th>Tipo</th>
+        <th>Proceso</th>
+        <th>Responsable</th>
+        <th class="text-center">Criticidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="font-mono text-xs text-slate-400">A01</td><td class="font-medium text-slate-700">Plataforma web (Azure Static Web Apps)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P1 · P3</td><td>Dev Frontend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A02</td><td class="font-medium text-slate-700">Backend · API REST (Azure Container Apps)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P1 · P2 · P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A03</td><td class="font-medium text-slate-700">Base de datos relacional (perfiles y progreso)</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1 · P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A04</td><td class="font-medium text-slate-700">Azure Blob Storage (videos y recursos)</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A05</td><td class="font-medium text-slate-700">Datos personales de usuarios</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1</td><td>PM · QA</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A06</td><td class="font-medium text-slate-700">Catálogo de cursos segmentado</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P1</td><td>Project Manager</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A07</td><td class="font-medium text-slate-700">Pasarela de pagos (Stripe / PayPal)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>P2</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A08</td><td class="font-medium text-slate-700">Registros de transacciones y propiedad de bundles</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P2</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A09</td><td class="font-medium text-slate-700">Certificados digitales</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>P3</td><td>QA / Analista</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A10</td><td class="font-medium text-slate-700">Reproductor de video interactivo / streaming</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P3</td><td>Dev Frontend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A11</td><td class="font-medium text-slate-700">Infraestructura en la nube (Microsoft Azure)</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A12</td><td class="font-medium text-slate-700">Pipeline CI/CD (Azure Pipelines · Container Registry)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A13</td><td class="font-medium text-slate-700">Certificado SSL / HTTPS</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A14</td><td class="font-medium text-slate-700">Repositorio de código (GitHub)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Project Manager</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A15</td><td class="font-medium text-slate-700">Laptops de desarrollo</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>Apoyo</td><td>Equipo</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A16</td><td class="font-medium text-slate-700">Equipo de trabajo (PM · Dev · QA)</td><td><span class="chip bg-emerald-100 text-emerald-700">Personas</span></td><td>Todos</td><td>Project Manager</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A17</td><td class="font-medium text-slate-700">Aplicación móvil (Android en Kotlin)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P1 · P3</td><td>Dev Mobile</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A18</td><td class="font-medium text-slate-700">Módulo de Quizzes de Evaluación</td><td><span class="chip bg-brand-100 text-brand-700">Software</span></td><td>P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A19</td><td class="font-medium text-slate-700">Content Delivery Network (Azure CDN)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>P3</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A20</td><td class="font-medium text-slate-700">Servidor de Caché (Azure Cache for Redis)</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>P1</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A21</td><td class="font-medium text-slate-700">Consolas de Distribución (Google Play Console)</td><td><span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Dev Mobile</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A22</td><td class="font-medium text-slate-700">Herramientas de Asistencia de IA (GitHub Copilot / Google AI)</td><td><span class="chip bg-brand-100 text-brand-700">Software</span> <span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Equipo Dev</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A23</td><td class="font-medium text-slate-700">Entornos de Staging / Pruebas</td><td><span class="chip bg-slate-200 text-slate-700">Infraestructura</span></td><td>Apoyo</td><td>QA</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A24</td><td class="font-medium text-slate-700">Logs de Auditoría y Monitoreo del Sistema</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A25</td><td class="font-medium text-slate-700">Backups de la Base de Datos</td><td><span class="chip bg-sky-100 text-sky-700">Información</span></td><td>Todos</td><td>Dev Backend</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
+      <tr><td class="font-mono text-xs text-slate-400">A26</td><td class="font-medium text-slate-700">Mesa de Ayuda (Help Desk)</td><td><span class="chip bg-emerald-100 text-emerald-700">Personas</span> <span class="chip bg-amber-100 text-amber-700">Servicio</span></td><td>Apoyo</td><td>Soporte TI</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="mt-3 text-xs text-slate-400">26 activos integrados de los procesos de Usuarios y Catálogo (P1), Ventas (P2) y Aprendizaje y Evaluación (P3), más activos de apoyo.</p>
   </div>
 </section>
 
