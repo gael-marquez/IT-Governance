@@ -29,99 +29,146 @@
 </div>
 <section id="riesgos" class="bg-slate-50 py-16 lg:py-24 border-t border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    
+
     <div class="reveal flex flex-wrap items-end justify-between gap-4">
       <div class="max-w-2xl">
         <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">08 · Matriz de Riesgos · ISO/IEC 27000</span>
-        <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Gestión de riesgos de seguridad</h2>
-        <p class="mt-3 text-slate-600">Clasificación CID de los activos, valoración de riesgos e identificación de infraestructuras críticas.</p>
+        <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Análisis de riesgos</h2>
+        <p class="mt-3 text-slate-600">Valoración de activos por proceso, infraestructuras críticas, amenazas y tratamiento de riesgos (R01–R10) de la plataforma Omnis Academia.</p>
       </div>
-      <button data-pdf="pdf/analisis-riesgos-omnis.pdf" data-pdf-title="Matriz de Riesgos · Omnis Academia" class="group inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
+      <button data-pdf="pdf/analisis-riesgos-omnis.pdf" data-pdf-title="Análisis de Riesgos · Omnis Academia" class="group inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
         Ver documento original (PDF)
         <span class="text-white/60 group-hover:translate-x-0.5 transition">→</span>
       </button>
     </div>
 
-    <div class="reveal mt-10">
-      <h3 class="font-display font-bold text-lg text-slate-900">Matriz CID</h3>
-      <p class="mt-1 text-sm text-slate-500">Valoración de Confidencialidad, Integridad y Disponibilidad por activo (A = Alta · M = Media · B = Baja).</p>
-      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
-        <table class="tbl min-w-[560px]">
-          <thead><tr><th>Activo de información</th><th class="text-center">Confidencialidad</th><th class="text-center">Integridad</th><th class="text-center">Disponibilidad</th></tr></thead>
-          <tbody>
-            <tr><td class="font-medium text-slate-700">Datos personales de usuarios</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Base de datos de progreso</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Transacciones y pagos</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Certificados digitales</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Videos y recursos (Blob)</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Plataforma web y streaming</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alta</span></td></tr>
-            <tr><td class="font-medium text-slate-700">Catálogo de cursos</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Media</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
+    <!-- 1 · Valoración de activos -->
     <div class="reveal mt-12">
-      <h3 class="font-display font-bold text-lg text-slate-900">Valoración de riesgos y controles</h3>
-      <p class="mt-1 text-sm text-slate-500">Nivel de riesgo = Probabilidad × Impacto. Controles alineados a ISO/IEC 27002.</p>
+      <h3 class="font-display font-bold text-lg text-slate-900">Valoración de activos</h3>
+      <p class="mt-1 text-sm text-slate-500">Escala 1–3 (1 bajo · 3 alto) · Criticidad I–IV (IV = máxima).</p>
       <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
-        <table class="tbl min-w-[860px]">
-          <thead><tr><th>ID</th><th>Amenaza / Vulnerabilidad</th><th>Activo afectado</th><th class="text-center">Prob.</th><th class="text-center">Impacto</th><th class="text-center">Nivel</th><th>Control / Tratamiento</th></tr></thead>
+        <table class="tbl min-w-[780px]">
+          <thead><tr>
+            <th>Proceso</th><th>Activo</th>
+            <th class="text-center">Área</th><th class="text-center">Período</th><th class="text-center">Impacto</th>
+            <th class="text-center">IC afect.</th><th class="text-center">Campos</th><th class="text-center">Interdep.</th>
+            <th class="text-center">Criticidad</th>
+          </tr></thead>
           <tbody>
-            <tr><td class="font-mono text-xs text-slate-400">R01</td><td class="font-medium text-slate-700">Caída o latencia del streaming</td><td>Reproductor · Blob · Nube</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Auto-scaling, CDN y redundancia multi-zona.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R02</td><td class="font-medium text-slate-700">Brecha de datos personales</td><td>BD · Datos de usuarios</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Cifrado en reposo/tránsito y control de acceso.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R03</td><td class="font-medium text-slate-700">Fraude o intercepción en pagos</td><td>Pasarela · Transacciones</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>Tokenización, TLS y cumplimiento PCI-DSS.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R04</td><td class="font-medium text-slate-700">Acceso no autorizado (cuentas/admin)</td><td>API · Plataforma</td><td class="text-center">Media</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td>MFA, RBAC y tokens de sesión.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R05</td><td class="font-medium text-slate-700">Falsificación de certificados</td><td>Certificados digitales</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Firma digital y validación criptográfica.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R06</td><td class="font-medium text-slate-700">Pérdida de datos por fallo de servidor</td><td>Base de datos</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Respaldos diarios (RPO ≤ 24 h) y restauración &lt; 4 h.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R07</td><td class="font-medium text-slate-700">Ataque de denegación (DDoS)</td><td>Plataforma · Nube</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>WAF y mitigación en &lt; 60 min.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R08</td><td class="font-medium text-slate-700">Indisponibilidad del proveedor de nube</td><td>Infraestructura Azure</td><td class="text-center">Baja</td><td class="text-center">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Alta disponibilidad y despliegue multi-zona.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R09</td><td class="font-medium text-slate-700">Código vulnerable o dependencias inseguras</td><td>Backend · Frontend</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Pruebas, cobertura ≥ 80% y análisis SAST.</td></tr>
-            <tr><td class="font-mono text-xs text-slate-400">R10</td><td class="font-medium text-slate-700">Error humano / fuga interna</td><td>Personas · Datos</td><td class="text-center">Media</td><td class="text-center">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td>Capacitación y principio de mínimo privilegio.</td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P1</td><td class="font-medium text-slate-700">Base de datos relacional</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center text-red-600 font-bold">3</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">3</td><td class="text-center"><span class="chip bg-red-100 text-red-700 text-sm font-bold px-2.5">IV</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P2</td><td class="font-medium text-slate-700">Microservicio de pagos</td><td class="text-center">2</td><td class="text-center">1</td><td class="text-center text-red-600 font-bold">3</td><td class="text-center">1</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center"><span class="chip bg-red-100 text-red-700 text-sm font-bold px-2.5">IV</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P3</td><td class="font-medium text-slate-700">Plataforma streaming HD (Blob + CDN)</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center text-red-600 font-bold">3</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center">3</td><td class="text-center"><span class="chip bg-red-100 text-red-700 text-sm font-bold px-2.5">IV</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P2</td><td class="font-medium text-slate-700">Registro propiedad permanente (bundles)</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center text-amber-600 font-bold">2</td><td class="text-center">1</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700 text-sm font-bold px-2.5">III</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P3</td><td class="font-medium text-slate-700">Emisión de certificados digitales</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center text-amber-600 font-bold">2</td><td class="text-center">1</td><td class="text-center">2</td><td class="text-center">2</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700 text-sm font-bold px-2.5">III</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P1</td><td class="font-medium text-slate-700">Gestión de perfiles de usuario</td><td class="text-center">2</td><td class="text-center">1</td><td class="text-center text-amber-600 font-bold">2</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center">2</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700 text-sm font-bold px-2.5">III</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P3</td><td class="font-medium text-slate-700">BD evaluaciones y quizzes</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center text-amber-600 font-bold">2</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center"><span class="chip bg-sky-100 text-sky-700 text-sm font-bold px-2.5">II</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P2</td><td class="font-medium text-slate-700">Sistema de notificaciones de pago</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center text-slate-400">1</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center"><span class="chip bg-sky-100 text-sky-700 text-sm font-bold px-2.5">II</span></td></tr>
+            <tr><td class="font-mono text-xs text-slate-500">P1</td><td class="font-medium text-slate-700">Catálogo segmentado (caché + frontend)</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center text-slate-400">1</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center">1</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700 text-sm font-bold px-2.5">I</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <div class="reveal mt-12 grid lg:grid-cols-2 gap-6">
-      <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="font-display font-bold text-lg text-slate-900">Mapa de calor probabilidad × impacto</h3>
-        <div class="mt-4 grid grid-cols-[auto_repeat(3,1fr)] gap-1.5 text-xs text-center">
+    <!-- 2 · Infraestructuras críticas -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900">Infraestructuras críticas y controles</h3>
+      <p class="mt-1 text-sm text-slate-500">Infraestructuras críticas detectadas, su grado y los controles clave a implementar.</p>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[760px]">
+          <thead><tr><th>Activo</th><th class="text-center">Grado</th><th>Controles clave</th><th>Responsable</th></tr></thead>
+          <tbody>
+            <tr><td class="font-medium text-slate-700">Base de datos relacional</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Crítica</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">AES-256</span><span class="kw">Backups RPO≤24h</span><span class="kw">RTO&lt;4h</span><span class="kw">HA multi-zona</span><span class="kw">Firewall BD</span></div></td><td class="whitespace-nowrap text-slate-600">DevOps / DBA</td></tr>
+            <tr><td class="font-medium text-slate-700">Microservicio de pagos</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Crítica</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Tokenización PCI-DSS</span><span class="kw">TLS 1.3</span><span class="kw">Alertas fraude</span><span class="kw">Auditoría mensual</span></div></td><td class="whitespace-nowrap text-slate-600">Finanzas / Backend</td></tr>
+            <tr><td class="font-medium text-slate-700">Plataforma streaming HD (Blob + CDN)</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Crítica</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">SAS tokens</span><span class="kw">CDN multi-zona</span><span class="kw">Auto-scaling</span><span class="kw">WAF</span></div></td><td class="whitespace-nowrap text-slate-600">DevOps</td></tr>
+            <tr><td class="font-medium text-slate-700">Registro propiedad permanente</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Alta</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Validación server-side</span><span class="kw">Log inmutable</span><span class="kw">Conciliación diaria</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-medium text-slate-700">Emisión de certificados digitales</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Alta</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma SHA-256 CA</span><span class="kw">QR validación</span><span class="kw">Revocación</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-medium text-slate-700">Gestión de perfiles de usuario</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Alta</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Argon2id</span><span class="kw">MFA</span><span class="kw">RBAC</span><span class="kw">Logs de acceso</span></div></td><td class="whitespace-nowrap text-slate-600">Backend / Seguridad</td></tr>
+            <tr><td class="font-medium text-slate-700">Sistema de notificaciones de pago</td><td class="text-center"><span class="chip bg-sky-100 text-sky-700">Media</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma HMAC</span><span class="kw">TLS</span><span class="kw">Rate-limit</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-medium text-slate-700">Catálogo segmentado (cache)</td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Baja</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Roles</span><span class="kw">Versionado</span><span class="kw">Auditoría</span><span class="kw">TTL firmado</span></div></td><td class="whitespace-nowrap text-slate-600">Dev Team</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3 · Amenazas y eventos de riesgo -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900">Amenazas y eventos de riesgo</h3>
+      <p class="mt-1 text-sm text-slate-500">Amenaza identificada → evento de riesgo que materializa → control asociado.</p>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[760px]">
+          <thead><tr><th>Amenaza</th><th>Evento de riesgo</th><th>Controles</th></tr></thead>
+          <tbody>
+            <tr><td class="font-medium text-slate-700">Robo de credenciales · acceso no autorizado</td><td class="text-slate-600">Fuga masiva · violación LFPDPPP</td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma SHA-256 CA</span><span class="kw">QR validación</span><span class="kw">Revocación</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">SQLI · ransomware · fallo hardware</td><td class="text-slate-600">Pérdida permanente de progreso académico</td><td><div class="flex flex-wrap gap-1"><span class="kw">AES-256</span><span class="kw">Backups RPO≤24h/RTO&lt;4h</span><span class="kw">Firewall BD</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Modificación no autorizada · inyección de contenido</td><td class="text-slate-600">Desinformación académica · daño institucional</td><td><div class="flex flex-wrap gap-1"><span class="kw">Roles</span><span class="kw">Versionado</span><span class="kw">Auditoría</span><span class="kw">TTL firmado</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Intercepción · skimming · fraude en pasarela</td><td class="text-slate-600">Robo financiero · pérdida de confianza</td><td><div class="flex flex-wrap gap-1"><span class="kw">Tokenización PCI-DSS</span><span class="kw">TLS 1.3</span><span class="kw">No-log</span><span class="kw">Alertas</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Manipulación de parámetros · acceso sin pago</td><td class="text-slate-600">Pérdida de ingresos · acceso fraudulento a bundles</td><td><div class="flex flex-wrap gap-1"><span class="kw">Validación server-side</span><span class="kw">Log inmutable</span><span class="kw">Conciliación</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Suplantación de notificación · phishing</td><td class="text-slate-600">Fraude por confirmación falsa · pérdida de confianza</td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma HMAC</span><span class="kw">TLS</span><span class="kw">Rate-limit</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">DDoS · caída nube · acceso no autorizado</td><td class="text-slate-600">Indisponibilidad de clases · interrupción del aprendizaje</td><td><div class="flex flex-wrap gap-1"><span class="kw">SAS tokens</span><span class="kw">CDN multi-zona</span><span class="kw">Auto-scaling</span><span class="kw">WAF</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Trampa en evaluaciones · manipulación de calificaciones</td><td class="text-slate-600">Certificaciones fraudulentas · pérdida de valor académico</td><td><div class="flex flex-wrap gap-1"><span class="kw">Calificación server-side</span><span class="kw">Respuestas cifradas</span></div></td></tr>
+            <tr><td class="font-medium text-slate-700">Falsificación · clonación de credencial</td><td class="text-slate-600">Fraude en contratación · daño institucional</td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma SHA-256 CA</span><span class="kw">QR validación</span><span class="kw">Revocación</span></div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 4 · Matriz de tratamiento de riesgos -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900">Matriz de tratamiento de riesgos (R01–R10)</h3>
+      <p class="mt-1 text-sm text-slate-500">Nivel = Probabilidad × Impacto · Residual = riesgo tras aplicar el control.</p>
+      <div class="mt-4 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
+        <table class="tbl min-w-[940px]">
+          <thead><tr>
+            <th>ID</th><th>Amenaza / Vulnerabilidad</th><th>Activo afectado</th>
+            <th class="text-center">Prob.</th><th class="text-center">Impacto</th><th class="text-center">Nivel</th><th class="text-center">Residual</th>
+            <th>Control / Tratamiento</th><th>Responsable</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R01</td><td class="font-medium text-slate-700">Credenciales sin Argon2id / sin MFA</td><td class="text-slate-600">Datos personales y perfiles</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Argon2id</span><span class="kw">MFA</span><span class="kw">RBAC</span><span class="kw">Bloqueo 5 intentos</span></div></td><td class="whitespace-nowrap text-slate-600">Backend / Seg.</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R02</td><td class="font-medium text-slate-700">BD sin firewall ni cifrado en reposo</td><td class="text-slate-600">Base de datos relacional</td><td class="text-center text-emerald-600 font-semibold">Baja</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">AES-256 reposo</span><span class="kw">Firewall BD</span><span class="kw">Backups RPO≤24h</span></div></td><td class="whitespace-nowrap text-slate-600">DevOps / DBA</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R03</td><td class="font-medium text-slate-700">Modificación del catálogo sin versionado</td><td class="text-slate-600">Catálogo segmentado</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-amber-600 font-semibold">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Roles</span><span class="kw">Versionado</span><span class="kw">Auditoría</span><span class="kw">TTL firmado</span></div></td><td class="whitespace-nowrap text-slate-600">Dev Team</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R04</td><td class="font-medium text-slate-700">Pasarela sin tokenización PCI-DSS</td><td class="text-slate-600">Microservicio de pagos</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Tokenización PCI-DSS</span><span class="kw">TLS 1.3</span><span class="kw">No-log</span><span class="kw">Alertas fraude</span></div></td><td class="whitespace-nowrap text-slate-600">Backend / Fin.</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R05</td><td class="font-medium text-slate-700">Propiedad asignable desde el cliente</td><td class="text-slate-600">Registro propiedad permanente</td><td class="text-center text-emerald-600 font-semibold">Baja</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Validación server-side</span><span class="kw">Log inmutable</span><span class="kw">Conciliación diaria</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R06</td><td class="font-medium text-slate-700">Notificaciones de pago sin firma digital</td><td class="text-slate-600">Sistema de notificaciones</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-amber-600 font-semibold">Medio</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma HMAC</span><span class="kw">TLS</span><span class="kw">Rate-limit</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R07</td><td class="font-medium text-slate-700">Azure Blob con URLs públicas sin SAS</td><td class="text-slate-600">Plataforma streaming HD</td><td class="text-center text-red-600 font-semibold">Alta</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">SAS tokens</span><span class="kw">CDN multi-zona</span><span class="kw">Auto-scaling</span><span class="kw">WAF</span></div></td><td class="whitespace-nowrap text-slate-600">DevOps</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R08</td><td class="font-medium text-slate-700">Validación de quiz en el cliente</td><td class="text-slate-600">BD evaluaciones y quizzes</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Calificación en backend</span><span class="kw">Respuestas cifradas</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R09</td><td class="font-medium text-slate-700">Certificados sin firma CA confiable</td><td class="text-slate-600">Certificados digitales</td><td class="text-center text-emerald-600 font-semibold">Baja</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-amber-100 text-amber-700">Medio</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Firma SHA-256 CA</span><span class="kw">QR en línea</span><span class="kw">Revocación</span></div></td><td class="whitespace-nowrap text-slate-600">Backend</td></tr>
+            <tr><td class="font-mono text-xs font-bold text-slate-600">R10</td><td class="font-medium text-slate-700">Caída o latencia del streaming (DDoS)</td><td class="text-slate-600">Plataforma web · Blob · Nube</td><td class="text-center text-amber-600 font-semibold">Media</td><td class="text-center text-red-600 font-semibold">Alto</td><td class="text-center"><span class="chip bg-red-100 text-red-700">Alto</span></td><td class="text-center"><span class="chip bg-emerald-100 text-emerald-700">Bajo</span></td><td><div class="flex flex-wrap gap-1"><span class="kw">Auto-scaling</span><span class="kw">CDN</span><span class="kw">WAF</span><span class="kw">Mitigación DDoS &lt;60 min</span></div></td><td class="whitespace-nowrap text-slate-600">DevOps / Seg.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5 · Mapa de calor -->
+    <div class="reveal mt-12">
+      <h3 class="font-display font-bold text-lg text-slate-900">Mapa de calor · probabilidad × impacto</h3>
+      <p class="mt-1 text-sm text-slate-500">Ubicación de los riesgos R01–R10 según su probabilidad e impacto.</p>
+      <div class="mt-4 max-w-3xl overflow-x-auto">
+        <div class="grid grid-cols-[auto_repeat(3,1fr)] gap-2 text-sm text-center min-w-[480px]">
           <div></div>
-          <div class="font-semibold text-slate-500 pb-1">Impacto Bajo</div>
-          <div class="font-semibold text-slate-500 pb-1">Medio</div>
-          <div class="font-semibold text-slate-500 pb-1">Alto</div>
+          <div class="font-semibold text-slate-500 pb-1 self-end">Impacto bajo</div>
+          <div class="font-semibold text-slate-500 pb-1 self-end">Impacto medio</div>
+          <div class="font-semibold text-slate-500 pb-1 self-end">Impacto alto</div>
 
-          <div class="font-semibold text-slate-500 self-center pr-1">Prob. Alta</div>
-          <div class="rounded-lg bg-amber-200 text-amber-800 py-4 font-semibold">Medio</div>
-          <div class="rounded-lg bg-red-300 text-red-800 py-4 font-semibold">Alto</div>
-          <div class="rounded-lg bg-red-500 text-white py-4 font-semibold">Crítico</div>
+          <div class="font-semibold text-slate-500 self-center pr-1 text-xs">Prob. alta</div>
+          <div class="rounded-xl bg-amber-200 text-amber-900 py-6 font-bold">Medio</div>
+          <div class="rounded-xl bg-orange-300 text-orange-900 py-6 font-bold">Alto</div>
+          <div class="rounded-xl bg-red-500 text-white py-6 font-bold">Crítico<br><span class="text-xs font-semibold opacity-90">R07</span></div>
 
-          <div class="font-semibold text-slate-500 self-center pr-1">Media</div>
-          <div class="rounded-lg bg-emerald-200 text-emerald-800 py-4 font-semibold">Bajo</div>
-          <div class="rounded-lg bg-amber-300 text-amber-900 py-4 font-semibold">Medio<br><span class="font-normal opacity-70">R07·R09·R10</span></div>
-          <div class="rounded-lg bg-red-300 text-red-800 py-4 font-semibold">Alto<br><span class="font-normal opacity-70">R01·R02·R03·R04</span></div>
+          <div class="font-semibold text-slate-500 self-center pr-1 text-xs">Prob. media</div>
+          <div class="rounded-xl bg-emerald-200 text-emerald-900 py-6 font-bold">Bajo</div>
+          <div class="rounded-xl bg-amber-200 text-amber-900 py-6 font-bold">Medio<br><span class="text-xs font-semibold opacity-90">R03 · R06</span></div>
+          <div class="rounded-xl bg-orange-300 text-orange-900 py-6 font-bold">Alto<br><span class="text-xs font-semibold opacity-90">R01·R04·R08·R10</span></div>
 
-          <div class="font-semibold text-slate-500 self-center pr-1">Baja</div>
-          <div class="rounded-lg bg-emerald-300 text-emerald-900 py-4 font-semibold">Bajo</div>
-          <div class="rounded-lg bg-emerald-200 text-emerald-800 py-4 font-semibold">Bajo</div>
-          <div class="rounded-lg bg-amber-300 text-amber-900 py-4 font-semibold">Medio<br><span class="font-normal opacity-70">R05·R06·R08</span></div>
+          <div class="font-semibold text-slate-500 self-center pr-1 text-xs">Prob. baja</div>
+          <div class="rounded-xl bg-emerald-200 text-emerald-900 py-6 font-bold">Bajo</div>
+          <div class="rounded-xl bg-emerald-200 text-emerald-900 py-6 font-bold">Bajo</div>
+          <div class="rounded-xl bg-amber-200 text-amber-900 py-6 font-bold">Medio<br><span class="text-xs font-semibold opacity-90">R02·R05·R09</span></div>
         </div>
       </div>
-
-      <div class="rounded-2xl ring-1 ring-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="font-display font-bold text-lg text-slate-900">Infraestructuras críticas</h3>
-        <ul class="mt-4 space-y-2.5 text-sm">
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Base de datos relacional</span><span class="chip bg-red-600 text-white">Crítica</span></li>
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Backend · API REST</span><span class="chip bg-red-600 text-white">Crítica</span></li>
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Pasarela de pagos</span><span class="chip bg-red-600 text-white">Crítica</span></li>
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-red-50 ring-1 ring-red-100 p-3"><span class="font-medium text-slate-700">Azure Blob Storage (videos)</span><span class="chip bg-red-600 text-white">Crítica</span></li>
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-amber-50 ring-1 ring-amber-100 p-3"><span class="font-medium text-slate-700">Plataforma web (frontend)</span><span class="chip bg-amber-500 text-white">Alta</span></li>
-          <li class="flex items-center justify-between gap-3 rounded-lg bg-emerald-50 ring-1 ring-emerald-100 p-3"><span class="font-medium text-slate-700">Pipeline CI/CD</span><span class="chip bg-emerald-600 text-white">Media</span></li>
-        </ul>
-      </div>
     </div>
+
   </div>
 </section>
 

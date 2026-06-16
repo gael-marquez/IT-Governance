@@ -37,10 +37,14 @@ h1,h2,h3,h4,.font-display { font-family: 'Plus Jakarta Sans', 'Inter', sans-seri
 
 /* Tables */
 .tbl { width:100%; border-collapse:separate; border-spacing:0; font-size:.875rem; }
-.tbl th { background:#f8fafc; text-align:left; font-weight:600; color:#334155; padding:.6rem .8rem; border-bottom:1px solid #e2e8f0; }
-.tbl td { padding:.6rem .8rem; border-bottom:1px solid #eef2f7; color:#475569; vertical-align:top; }
+.tbl th { background:#eef2f6; text-align:left; font-weight:700; color:#0f172a; padding:.7rem .85rem; border-bottom:2px solid #d3dbe6; font-size:.7rem; text-transform:uppercase; letter-spacing:.045em; }
+.tbl td { padding:.7rem .85rem; border-bottom:1px solid #eef2f7; color:#475569; vertical-align:top; }
+.tbl tbody tr:nth-child(even) td { background:#f8fafc; }
 .tbl tr:last-child td { border-bottom:0; }
-.tbl tbody tr:hover td { background:#fbfcfe; }
+.tbl tbody tr:hover td { background:#eef4fb; }
+
+/* keyword tag chips inside tables */
+.kw { display:inline-flex; align-items:center; font-size:.68rem; font-weight:600; line-height:1; padding:.22rem .5rem; border-radius:.4rem; background:#f1f5f9; color:#475569; border:1px solid #e2e8f0; white-space:nowrap; }
 
 .chip { display:inline-flex; align-items:center; gap:.4rem; font-size:.72rem; font-weight:600; padding:.18rem .6rem; border-radius:9999px; }
 
