@@ -5,17 +5,126 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gobierno de TI · COBIT · Omnis Academia · IT Governance</title>
 <meta name="description" content="Gobierno de TI · COBIT — Portafolio del proyecto final de IT Governance de Omnis Academia. IPN · ESCOM · 7CV4." />
-<link rel="shortcut icon" href="./favicon/linux.png" type="image/x-icon" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="assets/config.js"></script>
-<link rel="stylesheet" href="assets/styles.css" />
+<style>
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  .bg-guinda-50  { background-color: #fdf2f4; }
+  .bg-guinda-100 { background-color: #fbd5db; }
+  .bg-guinda-700 { background-color: #7d1535; }
+  .text-guinda-700 { color: #7d1535; }
+  .ring-guinda-100 { --tw-ring-color: #fbd5db; }
+  .ring-guinda-200 { --tw-ring-color: #f5aab5; }
+
+  .bg-brand-50  { background-color: #eff6ff; }
+  .bg-brand-100 { background-color: #dbeafe; }
+  .bg-brand-600 { background-color: #2563eb; }
+  .text-brand-700 { color: #1d4ed8; }
+  .ring-brand-200 { --tw-ring-color: #bfdbfe; }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  /* Tabla general */
+  .tbl { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .tbl th, .tbl td { padding: 0.75rem 1rem; border-bottom: 1px solid #e2e8f0; text-align: left; }
+  .tbl thead tr { background: #f8fafc; }
+  .tbl th { font-weight: 600; color: #475569; font-size: 0.8rem; }
+  .tbl tbody tr:last-child td { border-bottom: none; }
+  .tbl tbody tr:hover td { background: #f8fafc; }
+
+  /* Mapa con cuadros negros */
+  .mapa-tabla { width: 100%; border-collapse: collapse; border: 2px solid #222; }
+  .mapa-tabla th, .mapa-tabla td { border: 1.5px solid #555; }
+  .dim-label {
+    width: 140px;
+    min-width: 120px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem 0.5rem;
+    background: #fff;
+  }
+  .meta-header {
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    background: #fff;
+    vertical-align: middle;
+  }
+  .contenido-celda {
+    padding: 1rem 1.25rem;
+    vertical-align: top;
+  }
+
+  /* Cuadros negros redondeados */
+  .card-negro {
+    background: #111;
+    color: #fff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.85rem 0.75rem;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    width: 148px;
+    min-height: 110px;
+    flex-shrink: 0;
+  }
+
+  .fila-cards {
+    display: flex;
+    gap: 0.65rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  /* Etiqueta rosa */
+  .etiqueta-rosa {
+    background: #e91e8c;
+    color: #fff;
+    border-radius: 9999px;
+    padding: 0.35rem 1.25rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+  }
+
+  .fila-etiqueta td {
+    text-align: center;
+    padding: 0.6rem 1rem;
+    background: #fafafa;
+  }
+
+  /* Justificaciones */
+  .just-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 0.75rem; }
+  .just-table th { background: #f1f5f9; color: #475569; font-weight: 600; padding: 0.5rem 0.75rem; text-align: left; border: 1px solid #e2e8f0; }
+  .just-table td { padding: 0.5rem 0.75rem; border: 1px solid #e2e8f0; vertical-align: top; color: #334155; }
+  .badge-p { display:inline-block; background:#7d1535; color:#fff; border-radius:4px; padding:0.1rem 0.45rem; font-size:0.72rem; font-weight:700; }
+  .badge-s { display:inline-block; background:#fbd5db; color:#7d1535; border-radius:4px; padding:0.1rem 0.45rem; font-size:0.72rem; font-weight:700; }
+  .badge-n { display:inline-block; color:#94a3b8; font-size:0.72rem; font-weight:600; }
+</style>
 </head>
-<body class="bg-slate-50 text-slate-700 antialiased selection:bg-guinda-200 selection:text-guinda-900" data-page="cobit" data-title="Gobierno de TI · COBIT">
+<body class="bg-slate-50 text-slate-700 antialiased">
 <main>
-<!-- ============ BREADCRUMB ============ -->
+
+<!-- BREADCRUMB -->
 <div class="bg-white border-b border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4">
     <nav class="text-sm text-slate-400 flex items-center gap-2 flex-wrap">
@@ -28,81 +137,79 @@
     </nav>
   </div>
 </div>
+
 <section id="cobit" class="bg-white py-16 lg:py-24 border-t border-slate-100">
   <div class="max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="reveal max-w-2xl">
+
+    <!-- Encabezado -->
+    <div class="max-w-2xl">
       <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100">03 · Gobierno de TI</span>
       <h2 class="mt-4 text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">Metas y alineación estratégica con COBIT 2019</h2>
       <p class="mt-3 text-slate-600">Una meta por cada dimensión del <em>Balanced Scorecard</em>: Financiera, Cliente, Procesos Internos y Aprendizaje &amp; Crecimiento.</p>
-      <button data-pdf="pdf/mapa-estrategico-v2.pdf" data-pdf-title="Mapa Estratégico · COBIT" class="group mt-5 inline-flex items-center gap-2.5 whitespace-nowrap rounded-xl bg-guinda-700 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-guinda-800 transition">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M7 3h7l5 5v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path stroke-linecap="round" stroke-linejoin="round" d="M14 3v6h5"/></svg>
-        Ver Mapa Estratégico (PDF)
-        <span class="text-white/60 group-hover:translate-x-0.5 transition">→</span>
-      </button>
     </div>
 
-    <!-- Leyenda dimensiones -->
-    <div class="reveal mt-8 flex flex-wrap gap-2 text-xs font-semibold">
-      <span class="chip bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Financiera</span>
-      <span class="chip bg-brand-50 text-brand-700 ring-1 ring-brand-200"><span class="h-2 w-2 rounded-full bg-brand-500"></span>Cliente</span>
-      <span class="chip bg-amber-50 text-amber-700 ring-1 ring-amber-200"><span class="h-2 w-2 rounded-full bg-amber-500"></span>Procesos Internos</span>
-      <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-200"><span class="h-2 w-2 rounded-full bg-guinda-500"></span>Aprendizaje y Crecimiento</span>
+    <!-- Leyenda -->
+    <div class="mt-8 flex flex-wrap gap-2 text-xs font-semibold">
+      <span class="chip bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200"><span class="h-2 w-2 rounded-full bg-emerald-500 inline-block"></span>Financiera</span>
+      <span class="chip bg-brand-50 text-brand-700 ring-1 ring-brand-200"><span class="h-2 w-2 rounded-full bg-brand-600 inline-block"></span>Cliente</span>
+      <span class="chip bg-amber-50 text-amber-700 ring-1 ring-amber-200"><span class="h-2 w-2 rounded-full bg-amber-500 inline-block"></span>Procesos Internos</span>
+      <span class="chip bg-guinda-50 text-guinda-700 ring-1 ring-guinda-100"><span class="h-2 w-2 rounded-full bg-guinda-700 inline-block"></span>Aprendizaje y Crecimiento</span>
     </div>
 
-    <!-- Metas Corporativas -->
-    <h3 class="reveal mt-10 font-display font-bold text-xl text-slate-900">Metas Corporativas</h3>
+    <!-- ══════════════════════════════════════ -->
+    <!-- METAS CORPORATIVAS                    -->
+    <!-- ══════════════════════════════════════ -->
+    <h3 class="mt-10 font-display font-bold text-xl text-slate-900">Metas Corporativas</h3>
     <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="reveal rounded-2xl ring-1 ring-emerald-200 bg-emerald-50/50 p-5">
+      <div class="rounded-2xl ring-1 ring-emerald-200 bg-emerald-50/50 p-5">
         <div class="flex items-center justify-between"><span class="chip bg-emerald-600 text-white">MC-F</span><span class="text-xs font-semibold text-emerald-700">Financiera</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Disminuir gastos operativos en un 5% el segundo semestre de 2026.</p>
-        
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-brand-200 bg-brand-50/50 p-5">
+      <div class="rounded-2xl ring-1 ring-brand-200 bg-brand-50/50 p-5">
         <div class="flex items-center justify-between"><span class="chip bg-brand-600 text-white">MC-C</span><span class="text-xs font-semibold text-brand-700">Cliente</span></div>
-        <p class="mt-3 font-semibold text-slate-800 leading-snug">Aumentar la adquisición de trafico de nuestro sitio en 10% para el tercer cuatrimestre del año 2026.</p>
-        
+        <p class="mt-3 font-semibold text-slate-800 leading-snug">Aumentar la adquisición de tráfico de nuestro sitio en 10% para el tercer cuatrimestre del año 2026.</p>
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-amber-200 bg-amber-50/50 p-5">
+      <div class="rounded-2xl ring-1 ring-amber-200 bg-amber-50/50 p-5">
         <div class="flex items-center justify-between"><span class="chip bg-amber-500 text-white">MC-P</span><span class="text-xs font-semibold text-amber-700">Procesos</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Automatizar el 20% de los procesos contables de la empresa para finales de 2026.</p>
-        
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-guinda-200 bg-guinda-50/50 p-5">
+      <div class="rounded-2xl ring-1 ring-guinda-200 bg-guinda-50/50 p-5">
         <div class="flex items-center justify-between"><span class="chip bg-guinda-700 text-white">MC-A</span><span class="text-xs font-semibold text-guinda-700">Aprendizaje</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Formar al 100% de los empleados en la integración de la IA en sus procesos para el segundo semestre de 2027.</p>
-        
       </div>
     </div>
 
-    <!-- Metas IT -->
-    <h3 class="reveal mt-12 font-display font-bold text-xl text-slate-900">Metas de TI</h3>
+    <!-- ══════════════════════════════════════ -->
+    <!-- METAS DE TI                           -->
+    <!-- ══════════════════════════════════════ -->
+    <h3 class="mt-12 font-display font-bold text-xl text-slate-900">Metas de TI</h3>
     <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div class="reveal rounded-2xl ring-1 ring-emerald-200 bg-white p-5 shadow-sm">
+      <div class="rounded-2xl ring-1 ring-emerald-200 bg-white p-5 shadow-sm">
         <div class="flex items-center justify-between"><span class="chip bg-emerald-600 text-white">MIT-F</span><span class="text-xs font-semibold text-emerald-700">Financiera</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Reducir el costo de soporte técnico externo en un 25% implementando una base de conocimiento interna de resolución de incidentes antes de noviembre de 2026.</p>
-        
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-brand-200 bg-white p-5 shadow-sm">
+      <div class="rounded-2xl ring-1 ring-brand-200 bg-white p-5 shadow-sm">
         <div class="flex items-center justify-between"><span class="chip bg-brand-600 text-white">MIT-C</span><span class="text-xs font-semibold text-brand-700">Cliente</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Implementar un sistema de recomendación de cursos basado en historial de navegación para el 100% de los usuarios registrados antes de octubre de 2026.</p>
-        
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-amber-200 bg-white p-5 shadow-sm">
+      <div class="rounded-2xl ring-1 ring-amber-200 bg-white p-5 shadow-sm">
         <div class="flex items-center justify-between"><span class="chip bg-amber-500 text-white">MIT-P</span><span class="text-xs font-semibold text-amber-700">Procesos</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Implementar un pipeline de CI/CD que reduzca el tiempo de despliegue de actualizaciones de 4 horas a 30 minutos antes de septiembre de 2026.</p>
-        
       </div>
-      <div class="reveal rounded-2xl ring-1 ring-guinda-200 bg-white p-5 shadow-sm">
+      <div class="rounded-2xl ring-1 ring-guinda-200 bg-white p-5 shadow-sm">
         <div class="flex items-center justify-between"><span class="chip bg-guinda-700 text-white">MIT-A</span><span class="text-xs font-semibold text-guinda-700">Aprendizaje</span></div>
         <p class="mt-3 font-semibold text-slate-800 leading-snug">Crear un equipo interno de 2 personas especializado en datos e inteligencia artificial antes de mayo de 2027.</p>
-        
       </div>
     </div>
 
-    <!-- Cascada de Metas -->
-    <div class="reveal mt-14">
+    <!-- ══════════════════════════════════════ -->
+    <!-- CASCADA DE METAS — tabla P/S          -->
+    <!-- ══════════════════════════════════════ -->
+    <div class="mt-14">
       <h3 class="font-display font-bold text-xl text-slate-900">Cascada de Metas</h3>
       <p class="mt-2 text-slate-600 max-w-3xl">Mapeo de las relaciones entre las metas corporativas y las metas de TI. Cada celda indica si la contribución es <strong>primaria (P)</strong> o <strong>secundaria (S)</strong>.</p>
+
+      <!-- Tabla P/S -->
       <div class="mt-5 overflow-x-auto rounded-2xl ring-1 ring-slate-200 bg-white shadow-sm">
         <table class="tbl min-w-[640px]">
           <thead>
@@ -126,68 +233,270 @@
               <td class="sticky left-0 bg-white font-semibold text-slate-700">MIT-C · Cliente</td>
               <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
               <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-700 text-white text-xs font-bold">P</span></td>
-              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-700 text-white text-xs font-bold">P</span></td>
               <td class="text-center text-slate-300">—</td>
+              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
             </tr>
             <tr>
               <td class="sticky left-0 bg-white font-semibold text-slate-700">MIT-P · Procesos</td>
-              <td class="text-center text-slate-300">—</td>
-              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
               <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-700 text-white text-xs font-bold">P</span></td>
+              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
+              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
               <td class="text-center text-slate-300">—</td>
             </tr>
             <tr>
               <td class="sticky left-0 bg-white font-semibold text-slate-700">MIT-A · Aprendizaje</td>
-              <td class="text-center text-slate-300">—</td>
               <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
               <td class="text-center text-slate-300">—</td>
+              <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-100 text-guinda-700 text-xs font-bold">S</span></td>
               <td class="text-center"><span class="inline-grid place-items-center h-7 w-7 rounded-md bg-guinda-700 text-white text-xs font-bold">P</span></td>
             </tr>
           </tbody>
         </table>
       </div>
+
+      <!-- Leyenda -->
       <div class="mt-3 flex items-center gap-4 text-xs text-slate-500">
         <span class="inline-flex items-center gap-2"><span class="inline-grid place-items-center h-5 w-5 rounded bg-guinda-700 text-white font-bold">P</span> Relación primaria</span>
         <span class="inline-flex items-center gap-2"><span class="inline-grid place-items-center h-5 w-5 rounded bg-guinda-100 text-guinda-700 font-bold">S</span> Relación secundaria</span>
       </div>
+
+      <!-- Justificaciones -->
+      <div class="mt-8 space-y-6">
+        <h4 class="font-display font-bold text-lg text-slate-900">Justificación de relaciones</h4>
+
+        <!-- MIT-F -->
+        <div class="rounded-2xl ring-1 ring-emerald-200 bg-white p-5 shadow-sm">
+          <p class="font-semibold text-slate-800 mb-3"><span class="chip bg-emerald-600 text-white mr-2">MIT-F</span>Base de conocimiento interna — reducir soporte técnico externo 25%</p>
+          <table class="just-table">
+            <thead><tr><th>Meta Corporativa</th><th>Relación</th><th>Justificación</th></tr></thead>
+            <tbody>
+              <tr><td>MC-F · Reducir gastos operativos 5%</td><td><span class="badge-p">P</span></td><td>Reducir soporte externo significa ahorro directo y medible en los gastos operativos de la empresa.</td></tr>
+              <tr><td>MC-C · Aumentar tráfico 10%</td><td><span class="badge-n">—</span></td><td>No tiene relación con la adquisición de nuevos usuarios.</td></tr>
+              <tr><td>MC-P · Automatizar procesos contables 20%</td><td><span class="badge-s">S</span></td><td>Una base de conocimiento puede documentar y estandarizar procesos internos, incluyendo los contables, acelerando su automatización.</td></tr>
+              <tr><td>MC-A · Formar empleados en IA</td><td><span class="badge-s">S</span></td><td>El repositorio interno sirve como plataforma de aprendizaje continuo y puede albergar guías sobre uso de IA en el trabajo.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MIT-C -->
+        <div class="rounded-2xl ring-1 ring-brand-200 bg-white p-5 shadow-sm">
+          <p class="font-semibold text-slate-800 mb-3"><span class="chip bg-brand-600 text-white mr-2">MIT-C</span>Sistema de recomendación de cursos — 100% usuarios registrados, oct 2026</p>
+          <table class="just-table">
+            <thead><tr><th>Meta Corporativa</th><th>Relación</th><th>Justificación</th></tr></thead>
+            <tbody>
+              <tr><td>MC-F · Reducir gastos operativos 5%</td><td><span class="badge-s">S</span></td><td>Mejores recomendaciones generan más ventas orgánicas, reduciendo la dependencia y gasto en publicidad pagada.</td></tr>
+              <tr><td>MC-C · Aumentar tráfico 10%</td><td><span class="badge-p">P</span></td><td>El sistema mejora la experiencia del usuario y la retención, lo que impulsa el tráfico por referidos, reseñas positivas y mejor posicionamiento SEO.</td></tr>
+              <tr><td>MC-P · Automatizar procesos contables 20%</td><td><span class="badge-n">—</span></td><td>No tiene relación directa con la automatización contable.</td></tr>
+              <tr><td>MC-A · Formar empleados en IA</td><td><span class="badge-s">S</span></td><td>Implementar un sistema de ML obliga al equipo técnico a aprender y aplicar inteligencia artificial en un contexto real del negocio.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MIT-P -->
+        <div class="rounded-2xl ring-1 ring-amber-200 bg-white p-5 shadow-sm">
+          <p class="font-semibold text-slate-800 mb-3"><span class="chip bg-amber-500 text-white mr-2">MIT-P</span>Pipeline CI/CD — de 4 horas a 30 minutos, sep 2026</p>
+          <table class="just-table">
+            <thead><tr><th>Meta Corporativa</th><th>Relación</th><th>Justificación</th></tr></thead>
+            <tbody>
+              <tr><td>MC-F · Reducir gastos operativos 5%</td><td><span class="badge-p">P</span></td><td>Despliegues más rápidos reducen directamente las horas-hombre invertidas en cada release, bajando el costo operativo del área de TI.</td></tr>
+              <tr><td>MC-C · Aumentar tráfico 10%</td><td><span class="badge-s">S</span></td><td>Con despliegues más frecuentes y ágiles, las mejoras a la plataforma llegan más rápido a los usuarios, mejorando la experiencia y la retención.</td></tr>
+              <tr><td>MC-P · Automatizar procesos contables 20%</td><td><span class="badge-s">S</span></td><td>CI/CD es en sí misma la automatización de un proceso clave de TI, que sienta precedente y capacidades técnicas para automatizar otros procesos de la empresa.</td></tr>
+              <tr><td>MC-A · Formar empleados en IA</td><td><span class="badge-n">—</span></td><td>No tiene relación directa con la formación en IA.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- MIT-A -->
+        <div class="rounded-2xl ring-1 ring-guinda-200 bg-white p-5 shadow-sm">
+          <p class="font-semibold text-slate-800 mb-3"><span class="chip bg-guinda-700 text-white mr-2">MIT-A</span>Equipo interno de datos e IA — 2 personas, may 2027</p>
+          <table class="just-table">
+            <thead><tr><th>Meta Corporativa</th><th>Relación</th><th>Justificación</th></tr></thead>
+            <tbody>
+              <tr><td>MC-F · Reducir gastos operativos 5%</td><td><span class="badge-s">S</span></td><td>Contar con talento interno elimina la dependencia de consultores y proveedores externos costosos para proyectos de datos e IA.</td></tr>
+              <tr><td>MC-C · Aumentar tráfico 10%</td><td><span class="badge-n">—</span></td><td>No impacta directamente en la adquisición de tráfico al sitio.</td></tr>
+              <tr><td>MC-P · Automatizar procesos contables 20%</td><td><span class="badge-s">S</span></td><td>Un equipo de datos puede diseñar e implementar automatizaciones de reportes y procesos contables usando herramientas de IA.</td></tr>
+              <tr><td>MC-A · Formar empleados en IA</td><td><span class="badge-p">P</span></td><td>Es la meta más directamente alineada: el equipo especializado lidera, capacita y guía al resto de la organización en la adopción de IA.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div><!-- /justificaciones -->
     </div>
 
-    <!-- Mapa Estratégico -->
-    <div class="reveal mt-14">
-      <h3 class="font-display font-bold text-xl text-slate-900">Mapa Estratégico (Balanced Scorecard)</h3>
-      <p class="mt-2 text-slate-600 max-w-3xl">Relación causa-efecto entre la meta corporativa <strong class="text-brand-700">MC-C (tasa de finalización y satisfacción)</strong> y la meta de TI <strong class="text-brand-700">MIT-C (entrega de servicios de TI alineados)</strong>, leída de abajo hacia arriba.</p>
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- MAPA ESTRATÉGICO — METAS CORPORATIVAS (cuadros negros)   -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div class="mt-14">
+      <h3 class="font-display font-bold text-xl text-slate-900">Mapa Estratégico — Estrategias Corporativas</h3>
+      <p class="mt-2 text-slate-600 max-w-3xl">Acciones por dimensión que construyen hacia la meta corporativa. Se lee de abajo hacia arriba.</p>
 
-      <div class="mt-6 space-y-3">
-        <!-- Financiera -->
-        <div class="rounded-2xl ring-1 ring-emerald-200 bg-emerald-50/60 p-5 flex items-start gap-4">
-          <span class="chip bg-emerald-600 text-white shrink-0">Financiera</span>
-          <div><p class="font-semibold text-slate-800">Ingresos recurrentes y mayor LTV por la venta de bundles <span class="text-emerald-700">(MC-F)</span></p><p class="text-sm text-slate-500 mt-1">Estudiantes que finalizan y confían adquieren más paquetes → crecimiento sostenible.</p></div>
-        </div>
-        <div class="flex justify-center text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-6 6m6-6l6 6" /></svg></div>
-        <!-- Cliente -->
-        <div class="rounded-2xl ring-2 ring-brand-300 bg-brand-50/60 p-5 flex items-start gap-4">
-          <span class="chip bg-brand-600 text-white shrink-0">Cliente</span>
-          <div><p class="font-semibold text-slate-800">Estudiantes satisfechos que completan sus rutas de aprendizaje <span class="text-brand-700">(MC-C)</span></p><p class="text-sm text-slate-500 mt-1">Meta objetivo del mapa: 20% de finalización con alta satisfacción.</p></div>
-        </div>
-        <div class="flex justify-center text-brand-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-6 6m6-6l6 6" /></svg></div>
-        <!-- Procesos -->
-        <div class="rounded-2xl ring-2 ring-amber-300 bg-amber-50/60 p-5 flex items-start gap-4">
-          <span class="chip bg-amber-500 text-white shrink-0">Procesos</span>
-          <div><p class="font-semibold text-slate-800">Entrega de servicios de TI confiables, seguros y disponibles <span class="text-amber-700">(MIT-C / MIT-P)</span></p><p class="text-sm text-slate-500 mt-1">Streaming HD sin latencia, plataforma disponible 99% y datos protegidos.</p></div>
-        </div>
-        <div class="flex justify-center text-amber-400"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m0 0l-6 6m6-6l6 6" /></svg></div>
-        <!-- Aprendizaje -->
-        <div class="rounded-2xl ring-1 ring-guinda-200 bg-guinda-50/60 p-5 flex items-start gap-4">
-          <span class="chip bg-guinda-700 text-white shrink-0">Aprendizaje</span>
-          <div><p class="font-semibold text-slate-800">Personal de TI competente y motivado <span class="text-guinda-700">(MIT-A)</span></p><p class="text-sm text-slate-500 mt-1">Base del mapa: el talento habilita procesos sólidos que sostienen la experiencia del cliente.</p></div>
-        </div>
+      <div class="mt-6 overflow-x-auto">
+        <table class="mapa-tabla" style="min-width: 860px;">
+          <thead>
+            <tr>
+              <th class="dim-label bg-slate-100" style="border:1.5px solid #555;">DIMENSIONES</th>
+              <th class="meta-header" style="border:1.5px solid #555;">ESTRATEGIAS CORPORATIVAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- FINANCIERA -->
+            <tr>
+              <td class="dim-label" style="font-weight:900;">FINANCIERA</td>
+              <td class="meta-header">Disminuir gastos operativos en un 5% el segundo semestre de 2026</td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">Eficiencia operativa sostenida con tecnología y automatización</span>
+              </td>
+            </tr>
+            <!-- CLIENTE -->
+            <tr>
+              <td class="dim-label">CLIENTE/<br>USUARIO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Publicar al menos 3 artículos SEO semanales sobre tendencias TI para aumentar tráfico orgánico antes de agosto de 2026.</div>
+                  <div class="card-negro">Lanzar un programa de referidos que incentive a estudiantes actuales a atraer nuevos usuarios antes del tercer cuatrimestre de 2026.</div>
+                  <div class="card-negro">Implementar pruebas gratuitas de 7 días para al menos el 50% del catálogo de cursos antes de julio de 2026.</div>
+                  <div class="card-negro">Optimizar la tasa de conversión del sitio web en un 15% mediante A/B testing de landing pages antes de septiembre de 2026.</div>
+                  <div class="card-negro">Activar campañas de email nurturing automatizadas para leads no convertidos antes de agosto de 2026.</div>
+                </div>
+              </td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">Procesos más eficientes reducen el costo por operación y liberan recursos</span>
+              </td>
+            </tr>
+            <!-- PROCESOS -->
+            <tr>
+              <td class="dim-label">PROCESOS/<br>INTERNO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Implementar un software de facturación automática para todos los cobros recurrentes de suscripciones antes de agosto de 2026.</div>
+                  <div class="card-negro">Integrar reportes financieros automatizados semanales con conexión directa a la plataforma de cursos antes de septiembre de 2026.</div>
+                  <div class="card-negro">Automatizar la conciliación bancaria mensual mediante herramientas de contabilidad en la nube antes de octubre de 2026.</div>
+                  <div class="card-negro">Establecer flujos automáticos de aprobación de gastos operativos menores a $500 USD antes de julio de 2026.</div>
+                  <div class="card-negro">Digitalizar y automatizar el proceso de generación de contratos con instructores freelance antes de noviembre de 2026.</div>
+                </div>
+              </td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">Equipos capacitados en IA ejecutan más con menos recursos</span>
+              </td>
+            </tr>
+            <!-- APRENDIZAJE -->
+            <tr>
+              <td class="dim-label">APRENDIZAJE<br>Y<br>CRECIMIENTO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Diseñar un plan de capacitación interno en herramientas de IA (ChatGPT, Copilot, Gemini) por área funcional antes de septiembre de 2026.</div>
+                  <div class="card-negro">Certificar al 100% del equipo de marketing en uso de IA para creación de contenido y análisis de datos antes de octubre de 2026.</div>
+                  <div class="card-negro">Capacitar al equipo técnico en automatización con IA para desarrollo y soporte de la plataforma LMS antes de diciembre de 2026.</div>
+                  <div class="card-negro">Implementar un repositorio interno de prompts y casos de uso de IA aplicados al negocio antes de septiembre de 2026.</div>
+                  <div class="card-negro">Crear métricas mensuales de adopción de IA por departamento y vincularlas a objetivos de desempeño antes de noviembre de 2026.</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
+
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <!-- MAPA ESTRATÉGICO — ÁREA DE TI (cuadros negros)           -->
+    <!-- ══════════════════════════════════════════════════════════ -->
+    <div class="mt-14 mb-8">
+      <h3 class="font-display font-bold text-xl text-slate-900">Mapa Estratégico — Estrategias para Área de TI</h3>
+      <p class="mt-2 text-slate-600 max-w-3xl">Acciones por dimensión que construyen hacia la meta de TI seleccionada (MIT-C). Se lee de abajo hacia arriba.</p>
+
+      <div class="mt-6 overflow-x-auto">
+        <table class="mapa-tabla" style="min-width: 860px;">
+          <thead>
+            <tr>
+              <th class="dim-label bg-slate-100" style="border:1.5px solid #555;">DIMENSIONES</th>
+              <th class="meta-header" style="border:1.5px solid #555;">ESTRATEGIAS PARA ÁREA TI</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- META OBJETIVO -->
+            <tr>
+              <td class="dim-label" style="font-size:0.8rem;">CLIENTE/<br>USUARIO</td>
+              <td class="meta-header">Implementar un sistema de recomendación de cursos basado en historial de navegación para el 100% de los usuarios registrados antes de octubre de 2026</td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">El equipo necesita las capacidades técnicas correctas antes de poder construir y mantener el sistema</span>
+              </td>
+            </tr>
+            <!-- APRENDIZAJE -->
+            <tr>
+              <td class="dim-label">APRENDIZAJE<br>Y<br>CRECIMIENTO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Definir y asignar roles claros del proyecto (data engineer, ML engineer, backend dev) antes de enero de 2026.</div>
+                  <div class="card-negro">Realizar un workshop de 8 horas sobre privacidad de datos y cumplimiento normativo (LFPDPPP) aplicado al tracking de usuarios antes de enero de 2026.</div>
+                  <div class="card-negro">Capacitar a 2 desarrolladores en fundamentos de sistemas de recomendación (collaborative filtering, content-based filtering) antes de febrero de 2026.</div>
+                  <div class="card-negro">Certificar a 1 persona del equipo en ingeniería de datos (Airflow, Spark o equivalente) antes de febrero de 2026.</div>
+                  <div class="card-negro">Documentar en una wiki interna la arquitectura completa, decisiones técnicas y manual de operación del sistema antes de septiembre de 2026.</div>
+                </div>
+              </td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">Con los recursos necesarios el equipo puede desarrollar e implementar el sistema</span>
+              </td>
+            </tr>
+            <!-- PROCESOS -->
+            <tr>
+              <td class="dim-label">PROCESOS/<br>INTERNO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Implementar el tracking de eventos de navegación (clics, vistas, tiempo en página) para el 100% de los usuarios registrados antes de abril de 2026.</div>
+                  <div class="card-negro">Construir un pipeline ETL automatizado que procese y limpie los datos de comportamiento de usuarios diariamente antes de mayo de 2026.</div>
+                  <div class="card-negro">Desarrollar el modelo de recomendación (filtrado colaborativo o basado en contenido) con una precisión mínima del 70% en pruebas internas antes de julio de 2026.</div>
+                  <div class="card-negro">Integrar la API del motor de recomendación con la plataforma LMS con tiempo de respuesta menor a 300ms antes de agosto de 2026.</div>
+                  <div class="card-negro">Automatizar el reentrenamiento del modelo cada 15 días con nuevos datos de comportamiento antes de septiembre de 2026.</div>
+                </div>
+              </td>
+            </tr>
+            <!-- etiqueta -->
+            <tr class="fila-etiqueta">
+              <td style="border:none; padding:0;"></td>
+              <td style="border:1.5px solid #555; text-align:center; padding:0.6rem 1rem; background:#fafafa;">
+                <span class="etiqueta-rosa">Con presupuesto asegurado el equipo puede construir la infraestructura que el motor de recomendación necesita</span>
+              </td>
+            </tr>
+            <!-- FINANCIERO -->
+            <tr>
+              <td class="dim-label">FINANCIERO</td>
+              <td class="contenido-celda">
+                <div class="fila-cards">
+                  <div class="card-negro">Aprobar un presupuesto dedicado de $15,000 USD para desarrollo e infraestructura del sistema de recomendación antes de febrero de 2026.</div>
+                  <div class="card-negro">Contratar un servicio cloud con tier de costo variable (AWS/GCP) que escale según usuarios activos, evitando sobreaprovisionamiento, antes de marzo de 2026.</div>
+                  <div class="card-negro">Reducir en un 20% el gasto en licencias de herramientas de analítica actuales migrando a soluciones open source (Apache Spark, MLflow) antes de marzo de 2026.</div>
+                  <div class="card-negro">Destinar el 30% del ahorro generado por automatización de procesos contables al presupuesto del proyecto de recomendación antes de abril de 2026.</div>
+                  <div class="card-negro">Reportar mensualmente el avance del gasto vs presupuesto con alertas automáticas al superar el 80% del límite, desde marzo de 2026.</div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
   </div>
 </section>
-
-
 </main>
-<script src="assets/app.js"></script>
 </body>
 </html>
